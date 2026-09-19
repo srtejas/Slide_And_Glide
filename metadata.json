@@ -1,0 +1,6 @@
+{
+  "name": "Slide & Glide",
+  "description": "Slide & Glide is a premier indoor children's play arena and birthday party venue featuring slides, trampolines, pretend play areas, and interactive sensory zones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

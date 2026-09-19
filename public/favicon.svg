@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Background with vibrant purple gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="slideGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="trampGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Playful Trampoline Base -->
+  <ellipse cx="32" cy="48" rx="22" ry="7" fill="url(#trampGrad)"/>
+  <ellipse cx="32" cy="47" rx="18" ry="4.5" fill="#1E1B4B" opacity="0.6"/>
+  
+  <!-- Trampoline legs -->
+  <line x1="16" y1="48" x2="14" y2="56" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="48" y1="48" x2="50" y2="56" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="52" x2="32" y2="57" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Colorful Spiral Slide Curve -->
+  <path d="M14 16 C26 12, 38 24, 30 34 C24 42, 44 44, 48 46" 
+        stroke="url(#slideGrad)" 
+        stroke-width="6.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"/>
+
+  <!-- Playful Kid / Ball bouncing -->
+  <circle cx="28" cy="18" r="6.5" fill="#EC4899"/>
+  <!-- Sparkles -->
+  <path d="M48 14 L50 9 L52 14 L57 16 L52 18 L50 23 L48 18 L43 16 Z" fill="#FDE047"/>
+  <circle cx="15" cy="30" r="2.5" fill="#34D399"/>
+  <circle cx="50" cy="34" r="2" fill="#F472B6"/>
+</svg>
