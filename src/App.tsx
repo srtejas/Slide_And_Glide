@@ -3,7 +3,6 @@ import { Navbar } from './components/Navbar';
 import { HeroAbout } from './components/HeroAbout';
 import { PhotosSection } from './components/PhotosSection';
 import { GoogleLocationReviews } from './components/GoogleLocationReviews';
-import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
@@ -15,7 +14,6 @@ export default function App() {
         <HeroAbout />
         <PhotosSection />
         <GoogleLocationReviews />
-        <TestimonialsSection />
         <ContactSection />
       </main>
       <Footer />

@@ -21,8 +21,18 @@ export const HeroAbout: React.FC = () => {
           </div>
         </div>
 
-        {/* Brand Heading & Tagline */}
+        {/* Brand Heading & Tagline with Mascot Logo */}
         <div className="text-center max-w-3xl mx-auto">
+          {/* Mascot Logo replacing S&G on main page */}
+          <div className="flex justify-center mb-4">
+            <img
+              src={IMAGES.logo}
+              alt="Slide & Glide Logo - Jump, Play & Celebrate!"
+              className="w-24 h-24 sm:w-32 sm:h-32 object-contain drop-shadow-md hover:scale-105 transition-transform"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-50 border border-violet-200 text-violet-700 text-xs font-bold mb-3">
             <Sparkles className="w-3.5 h-3.5 text-violet-600" />
             <span>Premier Indoor Children’s Play Arena &amp; Event Venue</span>
@@ -120,6 +130,61 @@ export const HeroAbout: React.FC = () => {
             </a>
           </div>
 
+        </div>
+
+        {/* Why We Started Section in the About */}
+        <div className="mt-12 sm:mt-16 pt-10 border-t border-slate-100">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-violet-50/70 via-white to-pink-50/40 rounded-3xl p-6 sm:p-10 border-2 border-violet-100 shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-8 h-8 rounded-xl bg-pink-600 text-white flex items-center justify-center shadow-xs">
+                <Heart className="w-4 h-4" />
+              </div>
+              <span className="text-xs font-bold uppercase tracking-wider text-pink-700 bg-pink-100/70 px-3 py-1 rounded-full">
+                Our Story &amp; Purpose
+              </span>
+            </div>
+
+            <h3 className="text-2xl sm:text-3xl font-black text-slate-900 font-['Fredoka',sans-serif]">
+              Why We Started Slide &amp; Glide
+            </h3>
+
+            <div className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed space-y-3.5">
+              <p>
+                As parents raising children in Bangalore, we watched our kids spending more and more time glued to phones, tablets, and TV screens. Between bustling city traffic and unpredictable weather, finding a clean, active, and stimulating space where children could run, climb, and laugh without worry was nearly impossible.
+              </p>
+              <p>
+                We founded <strong>Slide &amp; Glide</strong> to change that. We set out to create a vibrant indoor wonderland where children can disconnect from technology and reconnect with pure, joyous movement—jumping high on trampolines, exploring multi-tiered slides, diving into sensory ball pits, and roleplaying in creative pretend towns.
+              </p>
+              <p>
+                Every corner of our arena was crafted with a parent’s eye for safety: <strong>hospital-grade cleanliness, rounded soft foam padding, trained attendants, and an atmosphere brimming with warmth</strong>. We believe childhood should be filled with laughter, motor agility, and lasting friendships made while jumping and celebrating together!
+              </p>
+            </div>
+
+            {/* 3 Core Highlights */}
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-5 border-t border-violet-100">
+              <div className="bg-white rounded-2xl p-3.5 border border-violet-100 shadow-2xs flex items-start gap-2.5">
+                <span className="text-xl">🏃‍♂️</span>
+                <div>
+                  <h5 className="text-xs font-bold text-slate-900">100% Screen-Free Play</h5>
+                  <p className="text-[11px] text-slate-500 mt-0.5">Active physical movement, balance, and boundless joy</p>
+                </div>
+              </div>
+              <div className="bg-white rounded-2xl p-3.5 border border-pink-100 shadow-2xs flex items-start gap-2.5">
+                <span className="text-xl">🛡️</span>
+                <div>
+                  <h5 className="text-xs font-bold text-slate-900">Hygiene &amp; Safety First</h5>
+                  <p className="text-[11px] text-slate-500 mt-0.5">Deeply sanitized soft-play foam &amp; dedicated staff</p>
+                </div>
+              </div>
+              <div className="bg-white rounded-2xl p-3.5 border border-amber-100 shadow-2xs flex items-start gap-2.5">
+                <span className="text-xl">🎂</span>
+                <div>
+                  <h5 className="text-xs font-bold text-slate-900">Bangalore Community</h5>
+                  <p className="text-[11px] text-slate-500 mt-0.5">Early peer friendships &amp; hassle-free birthday parties</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>

@@ -1,18 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Phone, MessageCircle, Menu, X, Copy, Check, ExternalLink } from 'lucide-react';
-import { CONTACT_INFO } from '../data/siteData';
+import { CONTACT_INFO, IMAGES } from '../data/siteData';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [phonePopoverOpen, setPhonePopoverOpen] = useState(false);
-  const [copied, setCopied] = useState(false);
+  const [copiedText, setCopiedText] = useState<string | null>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
 
-  // Streamlined navigation links: reduced from 6 cluttered items to 4 clean items
+  // Streamlined navigation links
   const navLinks = [
     { label: 'About', href: '#about' },
     { label: 'Photos', href: '#photos' },
-    { label: 'Reviews', href: '#reviews' },
+    { label: 'Location', href: '#location' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -41,10 +41,10 @@ export const Navbar: React.FC = () => {
     };
   }, [phonePopoverOpen]);
 
-  const handleCopyPhone = () => {
-    navigator.clipboard.writeText(CONTACT_INFO.phone);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const handleCopyPhone = (numberToCopy: string) => {
+    navigator.clipboard.writeText(numberToCopy);
+    setCopiedText(numberToCopy);
+    setTimeout(() => setCopiedText(null), 2000);
   };
 
   return (
@@ -53,13 +53,12 @@ export const Navbar: React.FC = () => {
         
         {/* Logo matching animated play area theme */}
         <a href="#" className="flex items-center gap-2 group min-w-0 shrink">
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-br from-violet-600 via-purple-600 to-pink-500 p-0.5 shadow-sm shadow-violet-200 group-hover:scale-105 transition-transform shrink-0">
-            <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
-              <span className="font-black text-xs sm:text-sm bg-gradient-to-br from-violet-600 to-pink-600 bg-clip-text text-transparent font-['Fredoka',sans-serif]">
-                S&amp;G
-              </span>
-            </div>
-          </div>
+          <img
+            src={IMAGES.logo}
+            alt="Slide & Glide Mascot Logo"
+            className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl object-contain shadow-xs shrink-0 group-hover:scale-105 transition-transform"
+            referrerPolicy="no-referrer"
+          />
           <div className="flex flex-col truncate">
             <span className="text-lg sm:text-xl font-black text-slate-900 tracking-tight font-['Fredoka',sans-serif] leading-tight truncate">
               Slide <span className="text-violet-600">&amp;</span> Glide
@@ -104,33 +103,36 @@ export const Navbar: React.FC = () => {
 
             {/* Click-revealed Phone Dropdown Card */}
             {phonePopoverOpen && (
-              <div className="absolute right-0 mt-2 w-64 p-3.5 bg-white rounded-2xl border border-violet-100 shadow-xl shadow-violet-100/50 z-50 animate-in fade-in zoom-in-95 duration-150">
-                <div className="text-[11px] font-extrabold uppercase tracking-wider text-violet-600 mb-1">
-                  Arena Hotline &amp; Bookings
+              <div className="absolute right-0 mt-2 w-72 p-3.5 bg-white rounded-2xl border border-violet-100 shadow-xl shadow-violet-100/50 z-50 animate-in fade-in zoom-in-95 duration-150">
+                <div className="space-y-2">
+                  {CONTACT_INFO.phones.map((p, idx) => (
+                    <div key={idx} className="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+                      <span className="text-sm font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
+                        {p.display}
+                      </span>
+                      <div className="flex items-center gap-1.5">
+                        <a
+                          href={`tel:${p.raw}`}
+                          className="py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold flex items-center gap-1 transition-colors"
+                        >
+                          <Phone className="w-3 h-3" />
+                          <span>Call</span>
+                        </a>
+                        <button
+                          onClick={() => handleCopyPhone(p.display)}
+                          className="p-1.5 bg-white hover:bg-slate-100 text-slate-700 rounded-lg text-xs font-bold border border-slate-200 transition-colors"
+                          title="Copy number"
+                          aria-label={`Copy ${p.display}`}
+                        >
+                          {copiedText === p.display ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                        </button>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                <div className="text-base font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
-                  {CONTACT_INFO.phone}
-                </div>
-                <p className="text-[11px] text-slate-500 mt-0.5 mb-3">
+                <p className="text-[11px] text-slate-500 mt-2 text-center">
                   Open 7 days a week for walk-ins and party reservations.
                 </p>
-
-                <div className="grid grid-cols-2 gap-2">
-                  <a
-                    href={`tel:${CONTACT_INFO.phoneRaw}`}
-                    className="py-2 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5" />
-                    <span>Call Now</span>
-                  </a>
-                  <button
-                    onClick={handleCopyPhone}
-                    className="py-2 px-2.5 bg-slate-100 hover:bg-violet-50 text-slate-700 hover:text-violet-700 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-colors"
-                  >
-                    {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                    <span>{copied ? 'Copied!' : 'Copy'}</span>
-                  </button>
-                </div>
               </div>
             )}
           </div>
@@ -201,31 +203,33 @@ export const Navbar: React.FC = () => {
             ))}
           </div>
 
-          {/* Arena Hotline & Call options directly visible in mobile menu */}
+          {/* Call options directly visible in mobile menu */}
           <div className="pt-2 border-t border-slate-100">
-            <div className="p-3 bg-violet-50 rounded-2xl border border-violet-200">
-              <div className="text-[11px] font-bold text-violet-700 uppercase tracking-wider">
-                Slide &amp; Glide Arena Hotline:
-              </div>
-              <div className="text-lg font-black text-slate-900 font-['Fredoka',sans-serif] my-1">
-                {CONTACT_INFO.phone}
-              </div>
-              <div className="grid grid-cols-2 gap-2 mt-2">
-                <a
-                  href={`tel:${CONTACT_INFO.phoneRaw}`}
-                  className="py-2.5 text-center text-xs font-extrabold text-white bg-violet-600 hover:bg-violet-700 rounded-xl flex items-center justify-center gap-1.5 shadow-sm min-h-[44px]"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>Dial Now</span>
-                </a>
-                <button
-                  onClick={handleCopyPhone}
-                  className="py-2.5 text-center text-xs font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl flex items-center justify-center gap-1.5 min-h-[44px]"
-                >
-                  {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                  <span>{copied ? 'Copied!' : 'Copy Number'}</span>
-                </button>
-              </div>
+            <div className="p-3 bg-violet-50 rounded-2xl border border-violet-200 space-y-2">
+              {CONTACT_INFO.phones.map((p, idx) => (
+                <div key={idx} className="flex items-center justify-between gap-2 p-2.5 bg-white rounded-xl border border-violet-100">
+                  <span className="text-sm font-black text-slate-900 font-['Fredoka',sans-serif]">
+                    {p.display}
+                  </span>
+                  <div className="flex items-center gap-1.5">
+                    <a
+                      href={`tel:${p.raw}`}
+                      className="py-2 px-3 text-xs font-extrabold text-white bg-violet-600 hover:bg-violet-700 rounded-lg flex items-center gap-1 shadow-xs min-h-[38px]"
+                    >
+                      <Phone className="w-3.5 h-3.5" />
+                      <span>Call</span>
+                    </a>
+                    <button
+                      onClick={() => handleCopyPhone(p.display)}
+                      className="p-2 text-xs font-bold text-slate-700 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg min-h-[38px]"
+                      title="Copy number"
+                      aria-label={`Copy ${p.display}`}
+                    >
+                      {copiedText === p.display ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                    </button>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

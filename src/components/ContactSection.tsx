@@ -3,13 +3,13 @@ import { Phone, MessageCircle, Mail, MapPin, Navigation, Copy, Check } from 'luc
 import { CONTACT_INFO } from '../data/siteData';
 
 export const ContactSection: React.FC = () => {
-  const [copiedPhone, setCopiedPhone] = useState(false);
+  const [copiedPhoneText, setCopiedPhoneText] = useState<string | null>(null);
   const [copiedEmail, setCopiedEmail] = useState(false);
 
-  const handleCopyPhone = () => {
-    navigator.clipboard.writeText(CONTACT_INFO.phone);
-    setCopiedPhone(true);
-    setTimeout(() => setCopiedPhone(false), 2000);
+  const handleCopyPhone = (numberToCopy: string) => {
+    navigator.clipboard.writeText(numberToCopy);
+    setCopiedPhoneText(numberToCopy);
+    setTimeout(() => setCopiedPhoneText(null), 2000);
   };
 
   const handleCopyEmail = () => {
@@ -51,31 +51,32 @@ export const ContactSection: React.FC = () => {
                 Direct inquiries &amp; party bookings in Bangalore, India
               </p>
               
-              {/* Phone number displayed directly without reveal barrier */}
-              <div className="mt-4 p-3.5 bg-white rounded-xl border border-violet-200 shadow-2xs">
-                <div className="text-[11px] font-bold text-violet-700 uppercase tracking-wider">
-                  Arena Hotline:
-                </div>
-                <div className="text-base sm:text-lg font-black text-slate-900 font-['Fredoka',sans-serif] mt-0.5 tracking-tight">
-                  {CONTACT_INFO.phone}
-                </div>
-                <div className="flex items-center gap-2 mt-2.5">
-                  <a
-                    href={`tel:${CONTACT_INFO.phoneRaw}`}
-                    className="flex-1 py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold text-center flex items-center justify-center gap-1.5 transition-colors"
-                  >
-                    <Phone className="w-3 h-3" />
-                    <span>Call</span>
-                  </a>
-                  <button
-                    onClick={handleCopyPhone}
-                    className="py-1.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold flex items-center gap-1 transition-colors"
-                    aria-label="Copy phone number"
-                  >
-                    {copiedPhone ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
-                    <span>{copiedPhone ? 'Copied' : 'Copy'}</span>
-                  </button>
-                </div>
+              {/* Phone numbers displayed directly without Arena Hotline label */}
+              <div className="mt-4 space-y-2.5">
+                {CONTACT_INFO.phones.map((p, idx) => (
+                  <div key={idx} className="p-3 bg-white rounded-xl border border-violet-200 shadow-2xs flex items-center justify-between gap-2">
+                    <span className="text-sm sm:text-base font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
+                      {p.display}
+                    </span>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <a
+                        href={`tel:${p.raw}`}
+                        className="py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold flex items-center gap-1 transition-colors"
+                      >
+                        <Phone className="w-3 h-3" />
+                        <span>Call</span>
+                      </a>
+                      <button
+                        onClick={() => handleCopyPhone(p.display)}
+                        className="p-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition-colors"
+                        aria-label={`Copy ${p.display}`}
+                        title="Copy phone number"
+                      >
+                        {copiedPhoneText === p.display ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                      </button>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -89,13 +90,22 @@ export const ContactSection: React.FC = () => {
                 <MessageCircle className="w-4 h-4" />
                 <span>Chat on WhatsApp</span>
               </a>
-              <a
-                href={`tel:${CONTACT_INFO.phoneRaw}`}
-                className="w-full py-2 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1.5 border border-slate-200 transition-colors min-h-[40px]"
-              >
-                <Phone className="w-3.5 h-3.5 text-slate-500" />
-                <span>Direct Call</span>
-              </a>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={`tel:${CONTACT_INFO.phone1Raw}`}
+                  className="py-2 px-1 text-center rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1 border border-slate-200 transition-colors min-h-[40px]"
+                >
+                  <Phone className="w-3 h-3 text-slate-500" />
+                  <span>Call 9739780837</span>
+                </a>
+                <a
+                  href={`tel:${CONTACT_INFO.phone2Raw}`}
+                  className="py-2 px-1 text-center rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1 border border-slate-200 transition-colors min-h-[40px]"
+                >
+                  <Phone className="w-3 h-3 text-slate-500" />
+                  <span>Call 9945958367</span>
+                </a>
+              </div>
             </div>
           </div>
 

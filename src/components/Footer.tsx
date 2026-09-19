@@ -1,5 +1,5 @@
 import React from 'react';
-import { CONTACT_INFO } from '../data/siteData';
+import { CONTACT_INFO, IMAGES } from '../data/siteData';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -9,11 +9,14 @@ export const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
           
-          {/* Brand */}
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-violet-600 text-white font-black text-xs flex items-center justify-center font-['Fredoka',sans-serif]">
-              S&G
-            </div>
+          {/* Brand with Mascot Logo */}
+          <div className="flex items-center gap-3">
+            <img
+              src={IMAGES.logo}
+              alt="Slide & Glide Logo"
+              className="w-10 h-10 rounded-xl object-contain bg-white/10 p-0.5"
+              referrerPolicy="no-referrer"
+            />
             <div>
               <span className="font-black text-white text-base font-['Fredoka',sans-serif]">
                 Slide &amp; Glide
@@ -39,7 +42,7 @@ export const Footer: React.FC = () => {
               className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
               <Mail className="w-3.5 h-3.5 text-violet-400" />
-              <span>{CONTACT_INFO.email}</span>
+              <span>Email Us</span>
             </a>
 
             <a

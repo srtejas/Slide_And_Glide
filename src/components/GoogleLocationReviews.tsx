@@ -13,10 +13,10 @@ export const GoogleLocationReviews: React.FC = () => {
             Google Business &amp; Location
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 font-['Fredoka',sans-serif] mt-2">
-            Find Us on Google &amp; Add a Review
+            Find Us on Google Maps
           </h2>
           <p className="mt-2 text-sm sm:text-base text-slate-600">
-            Easily navigate to Slide &amp; Glide or share your family’s wonderful experience by scanning our QR code or clicking below.
+            Easily navigate to Slide &amp; Glide in Bangalore by scanning our QR code or opening Google Maps directly.
           </p>
         </div>
 
