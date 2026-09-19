@@ -28,15 +28,15 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold">
             <a
               href={`tel:${CONTACT_INFO.phoneRaw}`}
-              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
               <Phone className="w-3.5 h-3.5 text-violet-400" />
-              <span>{CONTACT_INFO.phone}</span>
+              <span>Call Us</span>
             </a>
 
             <a
               href={`mailto:${CONTACT_INFO.email}`}
-              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
               <Mail className="w-3.5 h-3.5 text-violet-400" />
               <span>{CONTACT_INFO.email}</span>
@@ -46,10 +46,10 @@ export const Footer: React.FC = () => {
               href={CONTACT_INFO.googleListingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
               <MapPin className="w-3.5 h-3.5 text-violet-400" />
-              <span>Google Maps</span>
+              <span>Bangalore Google Maps</span>
             </a>
           </div>
 
@@ -57,15 +57,15 @@ export const Footer: React.FC = () => {
 
         {/* Bottom copyright */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
-          <p>© {new Date().getFullYear()} Slide &amp; Glide. Children’s Indoor Play Arena &amp; Event Venue. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Slide &amp; Glide. Bangalore, India. All rights reserved.</p>
           <a
             href={CONTACT_INFO.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1"
+            className="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1 py-1"
           >
-            <MessageCircle className="w-3 h-3" />
-            <span>Chat on WhatsApp (+91 9538678201)</span>
+            <MessageCircle className="w-3.5 h-3.5" />
+            <span>WhatsApp Us</span>
           </a>
         </div>
 

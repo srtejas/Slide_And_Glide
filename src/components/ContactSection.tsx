@@ -1,8 +1,23 @@
-import React from 'react';
-import { Phone, MessageCircle, Mail, MapPin, Navigation, ExternalLink, Clock } from 'lucide-react';
+import React, { useState } from 'react';
+import { Phone, MessageCircle, Mail, MapPin, Navigation, Copy, Check } from 'lucide-react';
 import { CONTACT_INFO } from '../data/siteData';
 
 export const ContactSection: React.FC = () => {
+  const [copiedPhone, setCopiedPhone] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState(false);
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText(CONTACT_INFO.phone);
+    setCopiedPhone(true);
+    setTimeout(() => setCopiedPhone(false), 2000);
+  };
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(CONTACT_INFO.email);
+    setCopiedEmail(true);
+    setTimeout(() => setCopiedEmail(false), 2000);
+  };
+
   return (
     <section id="contact" className="py-14 sm:py-20 bg-white border-b border-slate-100">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -16,14 +31,14 @@ export const ContactSection: React.FC = () => {
             Get in Touch With Slide &amp; Glide
           </h2>
           <p className="mt-2 text-sm sm:text-base text-slate-600">
-            For walk-in entry inquiries, birthday party reservations, or school trips, reach out to our team directly.
+            For walk-in entry inquiries, birthday party reservations, or school trips, reach out to our Bangalore team directly.
           </p>
         </div>
 
         {/* 3 Contact Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          {/* Card 1: Phone & WhatsApp */}
+          {/* Card 1: Phone & WhatsApp (Reveal not needed - displayed directly) */}
           <div className="p-6 rounded-2xl border-2 border-violet-100 bg-violet-50/40 flex flex-col justify-between hover:border-violet-300 transition-colors">
             <div>
               <div className="w-10 h-10 rounded-xl bg-violet-600 text-white flex items-center justify-center mb-4 shadow-sm shadow-violet-200">
@@ -33,16 +48,34 @@ export const ContactSection: React.FC = () => {
                 Phone &amp; WhatsApp
               </h3>
               <p className="text-xs text-slate-500 mt-1">
-                Direct inquiries &amp; party bookings in India
+                Direct inquiries &amp; party bookings in Bangalore, India
               </p>
               
-              <div className="mt-4">
-                <a
-                  href={`tel:${CONTACT_INFO.phoneRaw}`}
-                  className="text-base font-extrabold text-slate-900 hover:text-violet-600 transition-colors block"
-                >
+              {/* Phone number displayed directly without reveal barrier */}
+              <div className="mt-4 p-3.5 bg-white rounded-xl border border-violet-200 shadow-2xs">
+                <div className="text-[11px] font-bold text-violet-700 uppercase tracking-wider">
+                  Arena Hotline:
+                </div>
+                <div className="text-base sm:text-lg font-black text-slate-900 font-['Fredoka',sans-serif] mt-0.5 tracking-tight">
                   {CONTACT_INFO.phone}
-                </a>
+                </div>
+                <div className="flex items-center gap-2 mt-2.5">
+                  <a
+                    href={`tel:${CONTACT_INFO.phoneRaw}`}
+                    className="flex-1 py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold text-center flex items-center justify-center gap-1.5 transition-colors"
+                  >
+                    <Phone className="w-3 h-3" />
+                    <span>Call</span>
+                  </a>
+                  <button
+                    onClick={handleCopyPhone}
+                    className="py-1.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold flex items-center gap-1 transition-colors"
+                    aria-label="Copy phone number"
+                  >
+                    {copiedPhone ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
+                    <span>{copiedPhone ? 'Copied' : 'Copy'}</span>
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -51,14 +84,14 @@ export const ContactSection: React.FC = () => {
                 href={CONTACT_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-sm shadow-violet-200 transition-colors"
+                className="w-full py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-sm shadow-violet-200 transition-colors min-h-[42px]"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Chat on WhatsApp</span>
               </a>
               <a
                 href={`tel:${CONTACT_INFO.phoneRaw}`}
-                className="w-full py-2 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1.5 border border-slate-200 transition-colors"
+                className="w-full py-2 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1.5 border border-slate-200 transition-colors min-h-[40px]"
               >
                 <Phone className="w-3.5 h-3.5 text-slate-500" />
                 <span>Direct Call</span>
@@ -76,23 +109,45 @@ export const ContactSection: React.FC = () => {
                 Email Us
               </h3>
               <p className="text-xs text-slate-500 mt-1">
-                Official inquiries &amp; feedback
+                Official inquiries &amp; customer support
               </p>
               
-              <div className="mt-4">
+              {/* Direct email link and address display */}
+              <div className="mt-4 p-3.5 bg-white rounded-xl border border-slate-200 shadow-2xs">
+                <div className="text-[11px] font-bold text-pink-700 uppercase tracking-wider">
+                  Official Email:
+                </div>
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
-                  className="text-sm font-bold text-slate-900 hover:text-violet-600 break-all transition-colors block"
+                  className="text-sm font-bold text-slate-900 hover:text-violet-600 break-all transition-colors block mt-0.5"
+                  title="Send email to Slide & Glide"
                 >
                   {CONTACT_INFO.email}
                 </a>
+                <div className="flex items-center gap-2 mt-2.5">
+                  <a
+                    href={`mailto:${CONTACT_INFO.email}`}
+                    className="flex-1 py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold text-center flex items-center justify-center gap-1.5 transition-colors"
+                  >
+                    <Mail className="w-3 h-3" />
+                    <span>Send Email</span>
+                  </a>
+                  <button
+                    onClick={handleCopyEmail}
+                    className="py-1.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold flex items-center gap-1 transition-colors"
+                    aria-label="Copy email address"
+                  >
+                    {copiedEmail ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
+                    <span>{copiedEmail ? 'Copied' : 'Copy'}</span>
+                  </button>
+                </div>
               </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-200">
               <a
-                href={`mailto:${CONTACT_INFO.email}?subject=Slide%20%26%20Glide%20Inquiry`}
-                className="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"
+                href={`mailto:${CONTACT_INFO.email}`}
+                className="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors min-h-[42px]"
               >
                 <Mail className="w-4 h-4" />
                 <span>Send Email</span>
@@ -100,7 +155,7 @@ export const ContactSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 3: Google Location */}
+          {/* Card 3: Google Location (Click below wording removed) */}
           <div className="p-6 rounded-2xl border-2 border-slate-100 bg-slate-50/60 flex flex-col justify-between hover:border-violet-200 transition-colors">
             <div>
               <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-4 shadow-sm shadow-emerald-200">
@@ -110,12 +165,18 @@ export const ContactSection: React.FC = () => {
                 Google Location
               </h3>
               <p className="text-xs text-slate-500 mt-1">
-                Find us on Google Maps
+                Find us on Google Maps (Bangalore)
               </p>
               
-              <p className="mt-4 text-xs text-slate-600 leading-relaxed font-semibold">
-                Click below to get turn-by-turn navigation directly to our arena location.
-              </p>
+              {/* "Click below" wording removed */}
+              <div className="mt-4 p-3.5 bg-white rounded-xl border border-slate-200 shadow-2xs">
+                <div className="text-[11px] font-bold text-emerald-700 uppercase tracking-wider">
+                  Location &amp; Directions:
+                </div>
+                <p className="mt-0.5 text-xs text-slate-600 leading-relaxed font-semibold">
+                  Turn-by-turn Google Maps navigation directly to our indoor arena in Bangalore.
+                </p>
+              </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-200">
@@ -123,7 +184,7 @@ export const ContactSection: React.FC = () => {
                 href={CONTACT_INFO.googleListingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-sm shadow-violet-200 transition-colors"
+                className="w-full py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-sm shadow-violet-200 transition-colors min-h-[42px]"
               >
                 <Navigation className="w-4 h-4" />
                 <span>Navigate via Google Maps</span>

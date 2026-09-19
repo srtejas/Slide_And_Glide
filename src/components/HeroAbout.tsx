@@ -12,12 +12,12 @@ export const HeroAbout: React.FC = () => {
           <img
             src={IMAGES.banner}
             alt="Slide & Glide Animated Play Area - Indoor Children Play Arena"
-            className="w-full h-auto max-h-[480px] object-cover object-center"
+            className="w-full h-auto min-h-[190px] max-h-[480px] object-cover object-center"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-violet-100 shadow-sm flex items-center gap-1.5 text-xs font-bold text-violet-900">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>Open in India</span>
+          <div className="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-full border border-violet-100 shadow-md flex items-center gap-1.5 text-xs font-bold text-violet-900 z-10">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+            <span>Open in Bangalore</span>
           </div>
         </div>
 
@@ -95,18 +95,18 @@ export const HeroAbout: React.FC = () => {
               href={CONTACT_INFO.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-violet-600 via-purple-600 to-pink-500 hover:from-violet-700 hover:via-purple-700 hover:to-pink-600 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-md shadow-violet-200 hover:shadow-lg transition-all"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-violet-600 via-purple-600 to-pink-500 hover:from-violet-700 hover:via-purple-700 hover:to-pink-600 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-md shadow-violet-200 hover:shadow-lg transition-all min-h-[44px]"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp Us (+91 9538678201)</span>
+              <span>WhatsApp Us</span>
             </a>
 
             <a
               href={`tel:${CONTACT_INFO.phoneRaw}`}
-              className="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm flex items-center justify-center gap-2 transition-colors"
+              className="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm flex items-center justify-center gap-2 transition-colors min-h-[44px]"
             >
               <Phone className="w-4 h-4" />
-              <span>Call: {CONTACT_INFO.phone}</span>
+              <span>Call Us</span>
             </a>
 
             <a

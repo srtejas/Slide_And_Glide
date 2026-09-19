@@ -131,12 +131,12 @@ export const GoogleLocationReviews: React.FC = () => {
                 <p className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-rose-500 shrink-0 mt-0.5" />
                   <span>
-                    Direct Google Location: <a href={CONTACT_INFO.googleListingUrl} target="_blank" rel="noopener noreferrer" className="text-violet-600 hover:underline font-bold">maps.app.goo.gl/zLi3pC3UZUMYc77M7</a>
+                    Direct Google Location (Bangalore): <a href={CONTACT_INFO.googleListingUrl} target="_blank" rel="noopener noreferrer" className="text-violet-600 hover:underline font-bold">maps.app.goo.gl/zLi3pC3UZUMYc77M7</a>
                   </span>
                 </p>
                 <p className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Ample parking &amp; easy accessibility for strollers &amp; families</span>
+                  <span>Ample parking &amp; easy accessibility for strollers &amp; families in Bangalore</span>
                 </p>
               </div>
 
