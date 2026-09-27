@@ -11,6 +11,7 @@ export const Navbar: React.FC = () => {
   // Streamlined navigation links
   const navLinks = [
     { label: 'About', href: '#about' },
+    { label: 'Why Choose Us', href: '#why-us' },
     { label: 'Photos', href: '#photos' },
     { label: 'Location', href: '#location' },
     { label: 'Contact', href: '#contact' },
@@ -113,10 +114,11 @@ export const Navbar: React.FC = () => {
                       <div className="flex items-center gap-1.5">
                         <a
                           href={`tel:${p.raw}`}
-                          className="py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold flex items-center gap-1 transition-colors"
+                          className="p-1.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold flex items-center justify-center transition-colors"
+                          title={`Call ${p.display}`}
+                          aria-label={`Call ${p.display}`}
                         >
-                          <Phone className="w-3 h-3" />
-                          <span>Call</span>
+                          <Phone className="w-3.5 h-3.5" />
                         </a>
                         <button
                           onClick={() => handleCopyPhone(p.display)}
@@ -214,14 +216,15 @@ export const Navbar: React.FC = () => {
                   <div className="flex items-center gap-1.5">
                     <a
                       href={`tel:${p.raw}`}
-                      className="py-2 px-3 text-xs font-extrabold text-white bg-violet-600 hover:bg-violet-700 rounded-lg flex items-center gap-1 shadow-xs min-h-[38px]"
+                      className="p-2 text-xs font-extrabold text-white bg-violet-600 hover:bg-violet-700 rounded-lg flex items-center justify-center shadow-xs min-h-[38px] min-w-[38px]"
+                      title={`Call ${p.display}`}
+                      aria-label={`Call ${p.display}`}
                     >
                       <Phone className="w-3.5 h-3.5" />
-                      <span>Call</span>
                     </a>
                     <button
                       onClick={() => handleCopyPhone(p.display)}
-                      className="p-2 text-xs font-bold text-slate-700 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg min-h-[38px]"
+                      className="p-2 text-xs font-bold text-slate-700 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg min-h-[38px] min-w-[38px] flex items-center justify-center"
                       title="Copy number"
                       aria-label={`Copy ${p.display}`}
                     >

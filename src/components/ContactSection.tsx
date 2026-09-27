@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle, Mail, MapPin, Navigation, Copy, Check } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Clock, Copy, Check } from 'lucide-react';
 import { CONTACT_INFO } from '../data/siteData';
 
 export const ContactSection: React.FC = () => {
@@ -19,186 +19,165 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-14 sm:py-20 bg-white border-b border-slate-100">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+    <section id="contact" className="py-6 sm:py-8 bg-slate-50/50 border-b border-slate-100">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
-        {/* Section Heading */}
-        <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-violet-700 bg-violet-100/70 px-3 py-1 rounded-full">
-            Contact &amp; Visit Us
+        {/* Compact Heading */}
+        <div className="text-center mb-6">
+          <span className="text-xs font-bold uppercase tracking-wider text-violet-700 bg-violet-100/70 px-3 py-0.5 rounded-full">
+            Direct Inquiries &amp; Bookings
           </span>
-          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 font-['Fredoka',sans-serif] mt-2">
-            Get in Touch With Slide &amp; Glide
+          <h2 className="text-xl sm:text-2xl font-black text-slate-900 font-['Fredoka',sans-serif] mt-1.5">
+            Contact Slide &amp; Glide
           </h2>
-          <p className="mt-2 text-sm sm:text-base text-slate-600">
-            For walk-in entry inquiries, birthday party reservations, or school trips, reach out to our Bangalore team directly.
+          <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
+            Walk-ins welcome every day. Reach out directly for birthday parties, private arena hire, or group visits.
           </p>
         </div>
 
-        {/* 3 Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Minimalist 3-Card Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           
-          {/* Card 1: Phone & WhatsApp (Reveal not needed - displayed directly) */}
-          <div className="p-6 rounded-2xl border-2 border-violet-100 bg-violet-50/40 flex flex-col justify-between hover:border-violet-300 transition-colors">
+          {/* Card 1: Direct Phone Numbers */}
+          <div className="p-4 rounded-2xl border border-violet-200/80 bg-white flex flex-col justify-between shadow-2xs">
             <div>
-              <div className="w-10 h-10 rounded-xl bg-violet-600 text-white flex items-center justify-center mb-4 shadow-sm shadow-violet-200">
-                <Phone className="w-5 h-5" />
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 rounded-xl bg-violet-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                  <Phone className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-slate-900 text-sm font-['Fredoka',sans-serif]">
+                    Phone Numbers
+                  </h3>
+                  <p className="text-[11px] text-slate-400">Direct arena calls</p>
+                </div>
               </div>
-              <h3 className="font-bold text-slate-900 text-base font-['Fredoka',sans-serif]">
-                Phone &amp; WhatsApp
-              </h3>
-              <p className="text-xs text-slate-500 mt-1">
-                Direct inquiries &amp; party bookings in Bangalore, India
-              </p>
-              
-              {/* Phone numbers displayed directly without Arena Hotline label */}
-              <div className="mt-4 space-y-2.5">
+
+              {/* Number Rows */}
+              <div className="space-y-2 mt-3">
                 {CONTACT_INFO.phones.map((p, idx) => (
-                  <div key={idx} className="p-3 bg-white rounded-xl border border-violet-200 shadow-2xs flex items-center justify-between gap-2">
-                    <span className="text-sm sm:text-base font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
+                  <div key={idx} className="p-2 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between gap-1.5">
+                    <a
+                      href={`tel:${p.raw}`}
+                      className="text-xs font-black text-slate-900 hover:text-violet-600 font-['Fredoka',sans-serif] tracking-tight transition-colors"
+                    >
                       {p.display}
-                    </span>
-                    <div className="flex items-center gap-1.5 shrink-0">
-                      <a
-                        href={`tel:${p.raw}`}
-                        className="py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold flex items-center gap-1 transition-colors"
-                      >
-                        <Phone className="w-3 h-3" />
-                        <span>Call</span>
-                      </a>
-                      <button
-                        onClick={() => handleCopyPhone(p.display)}
-                        className="p-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold transition-colors"
-                        aria-label={`Copy ${p.display}`}
-                        title="Copy phone number"
-                      >
-                        {copiedPhoneText === p.display ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                      </button>
-                    </div>
+                    </a>
+                    <button
+                      onClick={() => handleCopyPhone(p.display)}
+                      className="p-1 bg-white hover:bg-slate-100 text-slate-700 rounded-lg border border-slate-200 text-xs transition-colors shrink-0"
+                      aria-label={`Copy ${p.display}`}
+                      title="Copy phone number"
+                    >
+                      {copiedPhoneText === p.display ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
+                    </button>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-violet-100 flex flex-col gap-2">
+            <div className="mt-3 pt-3 border-t border-slate-100">
               <a
-                href={CONTACT_INFO.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-sm shadow-violet-200 transition-colors min-h-[42px]"
+                href={`tel:${CONTACT_INFO.phone1Raw}`}
+                className="w-full py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors min-h-[36px]"
               >
-                <MessageCircle className="w-4 h-4" />
-                <span>Chat on WhatsApp</span>
+                <Phone className="w-3.5 h-3.5" />
+                <span>Call Us</span>
               </a>
-              <div className="grid grid-cols-2 gap-2">
-                <a
-                  href={`tel:${CONTACT_INFO.phone1Raw}`}
-                  className="py-2 px-1 text-center rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1 border border-slate-200 transition-colors min-h-[40px]"
-                >
-                  <Phone className="w-3 h-3 text-slate-500" />
-                  <span>Call 9739780837</span>
-                </a>
-                <a
-                  href={`tel:${CONTACT_INFO.phone2Raw}`}
-                  className="py-2 px-1 text-center rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-xs flex items-center justify-center gap-1 border border-slate-200 transition-colors min-h-[40px]"
-                >
-                  <Phone className="w-3 h-3 text-slate-500" />
-                  <span>Call 9945958367</span>
-                </a>
-              </div>
             </div>
           </div>
 
-          {/* Card 2: Email */}
-          <div className="p-6 rounded-2xl border-2 border-slate-100 bg-slate-50/60 flex flex-col justify-between hover:border-violet-200 transition-colors">
+          {/* Card 2: Email & WhatsApp */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white flex flex-col justify-between shadow-2xs">
             <div>
-              <div className="w-10 h-10 rounded-xl bg-pink-600 text-white flex items-center justify-center mb-4 shadow-sm shadow-pink-200">
-                <Mail className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base font-['Fredoka',sans-serif]">
-                Email Us
-              </h3>
-              <p className="text-xs text-slate-500 mt-1">
-                Official inquiries &amp; customer support
-              </p>
-              
-              {/* Direct email link and address display */}
-              <div className="mt-4 p-3.5 bg-white rounded-xl border border-slate-200 shadow-2xs">
-                <div className="text-[11px] font-bold text-pink-700 uppercase tracking-wider">
-                  Official Email:
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 rounded-xl bg-pink-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                  <Mail className="w-4 h-4" />
                 </div>
-                <a
-                  href={`mailto:${CONTACT_INFO.email}`}
-                  className="text-sm font-bold text-slate-900 hover:text-violet-600 break-all transition-colors block mt-0.5"
-                  title="Send email to Slide & Glide"
-                >
-                  {CONTACT_INFO.email}
-                </a>
-                <div className="flex items-center gap-2 mt-2.5">
+                <div>
+                  <h3 className="font-bold text-slate-900 text-sm font-['Fredoka',sans-serif]">
+                    Email &amp; WhatsApp
+                  </h3>
+                  <p className="text-[11px] text-slate-400">Online support</p>
+                </div>
+              </div>
+
+              {/* Email display with copy */}
+              <div className="p-2.5 bg-slate-50 rounded-xl border border-slate-200 mt-3">
+                <span className="text-[10px] font-bold text-pink-700 uppercase tracking-wider block">
+                  Official Email:
+                </span>
+                <div className="flex items-center justify-between gap-1 mt-0.5">
                   <a
                     href={`mailto:${CONTACT_INFO.email}`}
-                    className="flex-1 py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold text-center flex items-center justify-center gap-1.5 transition-colors"
+                    className="text-xs font-bold text-slate-900 hover:text-violet-600 truncate transition-colors"
+                    title={CONTACT_INFO.email}
                   >
-                    <Mail className="w-3 h-3" />
-                    <span>Send Email</span>
+                    {CONTACT_INFO.email}
                   </a>
                   <button
                     onClick={handleCopyEmail}
-                    className="py-1.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-bold flex items-center gap-1 transition-colors"
+                    className="p-1 bg-white hover:bg-slate-100 text-slate-700 rounded-lg border border-slate-200 text-xs transition-colors shrink-0"
                     aria-label="Copy email address"
+                    title="Copy email address"
                   >
                     {copiedEmail ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
-                    <span>{copiedEmail ? 'Copied' : 'Copy'}</span>
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-slate-200">
+            <div className="mt-3 pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a
+                href={CONTACT_INFO.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-2xs transition-colors min-h-[36px]"
+              >
+                <MessageCircle className="w-3.5 h-3.5" />
+                <span>Chat on WhatsApp</span>
+              </a>
               <a
                 href={`mailto:${CONTACT_INFO.email}`}
-                className="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors min-h-[42px]"
+                className="w-full py-1.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-xs border border-slate-200 flex items-center justify-center gap-1.5 transition-colors"
               >
-                <Mail className="w-4 h-4" />
+                <Mail className="w-3.5 h-3.5 text-slate-500" />
                 <span>Send Email</span>
               </a>
             </div>
           </div>
 
-          {/* Card 3: Google Location (Click below wording removed) */}
-          <div className="p-6 rounded-2xl border-2 border-slate-100 bg-slate-50/60 flex flex-col justify-between hover:border-violet-200 transition-colors">
+          {/* Card 3: Arena Timings & Days */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white flex flex-col justify-between shadow-2xs">
             <div>
-              <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-4 shadow-sm shadow-emerald-200">
-                <MapPin className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base font-['Fredoka',sans-serif]">
-                Google Location
-              </h3>
-              <p className="text-xs text-slate-500 mt-1">
-                Find us on Google Maps (Bangalore)
-              </p>
-              
-              {/* "Click below" wording removed */}
-              <div className="mt-4 p-3.5 bg-white rounded-xl border border-slate-200 shadow-2xs">
-                <div className="text-[11px] font-bold text-emerald-700 uppercase tracking-wider">
-                  Location &amp; Directions:
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+                  <Clock className="w-4 h-4" />
                 </div>
-                <p className="mt-0.5 text-xs text-slate-600 leading-relaxed font-semibold">
-                  Turn-by-turn Google Maps navigation directly to our indoor arena in Bangalore.
-                </p>
+                <div>
+                  <h3 className="font-bold text-slate-900 text-sm font-['Fredoka',sans-serif]">
+                    Arena Hours
+                  </h3>
+                  <p className="text-[11px] text-slate-400">Open 7 days a week</p>
+                </div>
+              </div>
+
+              <div className="space-y-2 mt-3 text-xs">
+                <div className="p-2 bg-slate-50 rounded-xl border border-slate-200 flex justify-between items-center">
+                  <span className="font-semibold text-slate-600">Monday – Sunday</span>
+                  <span className="font-bold text-slate-900">10:00 AM – 9:00 PM</span>
+                </div>
+                <div className="p-2 bg-emerald-50 rounded-xl border border-emerald-100 flex items-center gap-1.5 text-emerald-800 text-[11px] font-semibold">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+                  <span>Walk-ins &amp; party bookings welcome</span>
+                </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-slate-200">
-              <a
-                href={CONTACT_INFO.googleListingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-sm shadow-violet-200 transition-colors min-h-[42px]"
-              >
-                <Navigation className="w-4 h-4" />
-                <span>Navigate via Google Maps</span>
-              </a>
+            <div className="mt-3 pt-3 border-t border-slate-100">
+              <div className="text-[11px] text-center text-slate-500">
+                Grip socks recommended • Sanitized arena
+              </div>
             </div>
           </div>
 
