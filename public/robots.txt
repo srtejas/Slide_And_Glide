@@ -1,0 +1,13 @@
+# Robots.txt for Slide & Glide Indoor Kids Play Area
+User-agent: *
+Allow: /
+
+# Direct access to all Google Verification and static assets
+Allow: /googled8ac7ee292cb8a58.html
+Allow: /sitemap.xml
+Allow: /favicon.ico
+Allow: /favicon.png
+Allow: /favicon.svg
+
+# Sitemaps
+Sitemap: https://slideandglide.in/sitemap.xml

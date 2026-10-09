@@ -15,6 +15,10 @@ export const HeroAbout: React.FC = () => {
             <img
               src={IMAGES.logo}
               alt="Slide & Glide Mascot Logo - Jump, Play & Celebrate!"
+              width="80"
+              height="80"
+              loading="eager"
+              decoding="async"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-sm hover:scale-105 transition-transform"
               referrerPolicy="no-referrer"
             />

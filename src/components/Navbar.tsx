@@ -8,15 +8,15 @@ export const Navbar: React.FC = () => {
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
 
-  // Streamlined navigation links with SEO targets
+  // Streamlined navigation links with SEO & deep landing targets
   const navLinks = [
     { label: 'About', href: '#about' },
-    { label: 'Play & Parties', href: '#services' },
-    { label: 'Why Choose Us', href: '#why-us' },
+    { label: 'Play Sessions', href: '#play-sessions' },
+    { label: 'Pricing', href: '#pricing' },
+    { label: 'Birthdays', href: '#birthdays' },
     { label: 'Photos', href: '#photos' },
     { label: 'FAQ', href: '#faq' },
     { label: 'Location', href: '#location' },
-    { label: 'Contact', href: '#contact' },
   ];
 
   // Close popover on click outside or escape key

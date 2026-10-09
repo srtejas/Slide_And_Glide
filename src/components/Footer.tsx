@@ -1,6 +1,6 @@
 import React from 'react';
 import { CONTACT_INFO, IMAGES } from '../data/siteData';
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -46,13 +46,23 @@ export const Footer: React.FC = () => {
             </a>
 
             <a
+              href={CONTACT_INFO.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-pink-400 hover:text-pink-300 transition-colors py-1"
+            >
+              <Instagram className="w-3.5 h-3.5 text-pink-400" />
+              <span>Instagram @slideandglideplayzone</span>
+            </a>
+
+            <a
               href={CONTACT_INFO.googleListingUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
               <MapPin className="w-3.5 h-3.5 text-violet-400" />
-              <span>Nagarabhavi on Google Maps</span>
+              <span>Google Maps</span>
             </a>
           </div>
 

@@ -119,6 +119,10 @@ export const PhotosSection: React.FC = () => {
                 <img
                   src={photo.src}
                   alt={photo.title}
+                  loading={idx === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  width="1200"
+                  height="600"
                   className="w-full h-full object-cover object-center"
                   referrerPolicy="no-referrer"
                 />

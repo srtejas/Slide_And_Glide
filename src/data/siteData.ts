@@ -25,6 +25,8 @@ export const CONTACT_INFO = {
   pinCode: '560091',
   whatsappUrl: 'https://wa.me/919538678201?text=Hi%20Slide%20%26%20Glide!%20I%20would%20like%20to%20inquire%20about%20entry%20and%20visiting%20timings.',
   whatsappBirthdayUrl: 'https://wa.me/919538678201?text=Hi%20Slide%20%26%20Glide!%20I%20would%20like%20to%20inquire%20about%20booking%20a%20kids%20birthday%20party%20at%20your%20Nagarabhavi%20arena.',
+  instagramUrl: 'https://www.instagram.com/slideandglideplayzone/',
+  instagramHandle: '@slideandglideplayzone',
   googleListingUrl: 'https://maps.app.goo.gl/zLi3pC3UZUMYc77M7?g_st=aw',
   googleReviewUrl: 'https://maps.app.goo.gl/zLi3pC3UZUMYc77M7?g_st=aw',
 };
@@ -226,6 +228,58 @@ export const SERVICES_LIST = [
     desc: 'Searching for exciting weekend activities for kids in Bangalore? Enjoy unlimited jumping, pretend grocery towns, trampoline games, and screen-free family adventures right here in Nagarabhavi.',
     icon: 'Clock',
     badge: 'Screen-Free',
+  },
+];
+
+// Play Session Pricing & Passes for Walk-ins & Families
+export const PLAY_PRICING_PLANS = [
+  {
+    id: 'pass-60',
+    title: '60-Minute Quick Play',
+    duration: '1 Hour Play Session',
+    tag: 'Quick Energy Burst',
+    suitableFor: 'Ages 1–10 Years',
+    features: [
+      'Full access to multi-level soft play area for kids',
+      'Toddler play area in Nagarabhavi & sensory ball pits',
+      'Trampoline jump beds & padded obstacle courses',
+      '1 Accompanying parent/guardian entry included',
+      'Free Wi-Fi & comfortable parents seating lounge',
+    ],
+    highlight: 'Perfect for quick weekday fun & after-school energy burn',
+    badge: 'Standard Pass',
+  },
+  {
+    id: 'pass-90',
+    title: '90-Minute Adventure Pass',
+    duration: '1.5 Hours Play Session',
+    tag: 'Most Popular Choice',
+    suitableFor: 'Ages 1–10 Years',
+    features: [
+      'Unrestricted entry to all soft play zones & slides',
+      'Role-play town, pretend supermarket & costume play',
+      'High-bounce trampoline zone & sensory ball pit games',
+      '1 Accompanying parent/guardian entry included',
+      'Complimentary shoe locker & sanitized play arena',
+    ],
+    highlight: 'The sweet spot for complete exploration and joyful play',
+    badge: 'Most Popular',
+  },
+  {
+    id: 'pass-120',
+    title: '120-Minute Power Play',
+    duration: '2 Hours Full Play',
+    tag: 'Weekend & Holiday Favorite',
+    suitableFor: 'Ages 1–10 Years',
+    features: [
+      '2 full hours of 100% screen-free active physical fun',
+      'Freedom to take water/snack breaks in lounge',
+      'Full access across all soft play, ball pit & trampoline',
+      '1 Accompanying parent/guardian entry included',
+      'Special sibling friendly rates available at reception',
+    ],
+    highlight: 'Ideal for weekend activities for kids in Bangalore',
+    badge: 'Best Value',
   },
 ];
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle, Mail, Clock, Copy, Check } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Clock, Copy, Check, Instagram } from 'lucide-react';
 import { CONTACT_INFO } from '../data/siteData';
 
 export const ContactSection: React.FC = () => {
@@ -136,6 +136,15 @@ export const ContactSection: React.FC = () => {
               >
                 <MessageCircle className="w-3.5 h-3.5" />
                 <span>Chat on WhatsApp</span>
+              </a>
+              <a
+                href={CONTACT_INFO.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2 rounded-xl bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-2xs transition-colors min-h-[36px]"
+              >
+                <Instagram className="w-3.5 h-3.5" />
+                <span>Instagram @slideandglideplayzone</span>
               </a>
               <a
                 href={`mailto:${CONTACT_INFO.email}`}
