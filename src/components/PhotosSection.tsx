@@ -59,10 +59,10 @@ export const PhotosSection: React.FC = () => {
     { label: 'Trampoline Jump Zone', icon: '🤸' },
     { label: 'Sensory Ball Pit', icon: '🎈' },
     { label: 'Pretend Play Town', icon: '🛒' },
-    { label: 'Birthday Party Suites', icon: '🎂' },
+    { label: 'Toddler Soft Play', icon: '🧸' },
     { label: '100% Screen-Free', icon: '🏃' },
     { label: 'Daily Sanitized', icon: '🧼' },
-    { label: 'Hospital-Grade Safety', icon: '🛡️' },
+    { label: 'Open 11 AM - 9 PM', icon: '⏰' },
   ];
 
   return (
@@ -79,7 +79,7 @@ export const PhotosSection: React.FC = () => {
             Explore Slide &amp; Glide Play Zones
           </h2>
           <p className="mt-1 text-xs sm:text-sm text-slate-600">
-            Swipe or use controls to tour our soft-play slides, trampoline beds, sensory ball pits, and birthday celebration suites.
+            Swipe or use controls to tour our soft-play slides, trampoline beds, sensory ball pits, and creative pretend play towns.
           </p>
         </div>
 

@@ -8,11 +8,13 @@ export const Navbar: React.FC = () => {
   const [copiedText, setCopiedText] = useState<string | null>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
 
-  // Streamlined navigation links
+  // Streamlined navigation links with SEO targets
   const navLinks = [
     { label: 'About', href: '#about' },
+    { label: 'Play Experiences', href: '#services' },
     { label: 'Why Choose Us', href: '#why-us' },
     { label: 'Photos', href: '#photos' },
+    { label: 'FAQ', href: '#faq' },
     { label: 'Location', href: '#location' },
     { label: 'Contact', href: '#contact' },
   ];
@@ -133,7 +135,7 @@ export const Navbar: React.FC = () => {
                   ))}
                 </div>
                 <p className="text-[11px] text-slate-500 mt-2 text-center">
-                  Open 7 days a week for walk-ins and party reservations.
+                  Open 7 days a week from 11:00 AM to 9:00 PM for walk-ins and families.
                 </p>
               </div>
             )}

@@ -13,10 +13,10 @@ export const GoogleLocationReviews: React.FC = () => {
             Google Business &amp; Location
           </span>
           <h2 className="text-xl sm:text-2xl font-black text-slate-900 font-['Fredoka',sans-serif] mt-1.5">
-            Find Us on Google Maps
+            Visit Our Indoor Kids Play Area in Nagarabhavi
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
-            Scan our QR code or tap below for turn-by-turn directions to our indoor arena in Bangalore.
+            Scan our QR code or tap below for turn-by-turn directions to our indoor playground in Nagarabhavi, Bangalore.
           </p>
         </div>
 
@@ -106,17 +106,23 @@ export const GoogleLocationReviews: React.FC = () => {
             {/* Right: Location Details & CTAs */}
             <div className="md:col-span-8 space-y-3">
               <h3 className="text-base sm:text-lg font-bold text-slate-900 font-['Fredoka',sans-serif]">
-                Slide &amp; Glide Children’s Play Arena &amp; Event Venue
+                Slide &amp; Glide Children’s Play Arena &amp; Indoor Playground
               </h3>
 
               <div className="space-y-1.5 text-xs text-slate-600">
-                <p className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-rose-500 shrink-0" />
-                  <span>Bangalore, Karnataka, India</span>
+                <p className="flex items-start gap-2">
+                  <MapPin className="w-4 h-4 text-rose-500 shrink-0 mt-0.5" />
+                  <span className="font-medium text-slate-800">
+                    {CONTACT_INFO.address}
+                  </span>
+                </p>
+                <p className="flex items-center gap-2 text-violet-700 font-semibold bg-violet-50/80 px-2.5 py-1 rounded-lg border border-violet-100">
+                  <span className="text-sm">📍</span>
+                  <span>{CONTACT_INFO.landmark}</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Ample parking &amp; easy stroller accessibility for families</span>
+                  <span>Plenty of free street parking &amp; easy lift/stroller accessibility for families</span>
                 </p>
               </div>
 

@@ -19,8 +19,11 @@ export const CONTACT_INFO = {
   phone: '+91 97397 80837, +91 99459 58367',
   phoneRaw: '+919739780837',
   email: 'slide.glide.0926@gmail.com',
-  // WhatsApp remains unchanged as requested
-  whatsappUrl: 'https://wa.me/919538678201?text=Hi%20Slide%20%26%20Glide!%20I%20would%20like%20to%20inquire%20about%20visiting%20and%20birthday%20parties.',
+  address: '3rd floor, No 125, S N Arcade, above Bakasura Bandi, Annapoorneshwari Nagar, Nagarbhavi, Bangalore, Karnataka 560091',
+  shortAddress: 'No 125, S N Arcade, above Bakasura Bandi, Annapoorneshwari Nagar, Nagarbhavi',
+  landmark: 'Above Bakasura Bandi, S N Arcade (3rd Floor)',
+  pinCode: '560091',
+  whatsappUrl: 'https://wa.me/919538678201?text=Hi%20Slide%20%26%20Glide!%20I%20would%20like%20to%20inquire%20about%20entry%20and%20visiting%20timings.',
   googleListingUrl: 'https://maps.app.goo.gl/zLi3pC3UZUMYc77M7?g_st=aw',
   googleReviewUrl: 'https://maps.app.goo.gl/zLi3pC3UZUMYc77M7?g_st=aw',
 };
@@ -65,13 +68,6 @@ export const PHOTOS = [
     category: 'Creative Play',
     src: pretendImg,
     description: 'Role-play kitchen, grocery stands, and dress-up stations sparking social imagination.',
-  },
-  {
-    id: 'birthday-party',
-    title: 'Birthday Celebrations & Party Zone',
-    category: 'Birthday Parties',
-    src: partyImg,
-    description: 'Private celebration suites with custom themes, cake cutting, and dedicated party hosts.',
   },
 ];
 
@@ -180,11 +176,87 @@ export const HYGIENE_STANDARDS = [
   {
     icon: 'HeartHandshake',
     title: 'Contactless Hand Hygiene Stations',
-    desc: 'Touchless hand sanitizers installed at the reception check-in, arena gates, and party lounge areas.',
+    desc: 'Touchless hand sanitizers installed at the reception check-in, arena gates, and play lounge areas.',
   },
   {
     icon: 'CheckCircle2',
     title: 'Strict Health & Sick Child Policy',
     desc: 'Children showing signs of fever or illness are gently asked to reschedule to safeguard the wellbeing of every visitor.',
+  },
+];
+
+// Target Services & Experiences for SEO & Parents
+export const SERVICES_LIST = [
+  {
+    id: 'soft-play',
+    title: 'Soft Play Area for Kids',
+    tag: 'All Ages • Active Play',
+    desc: 'A premium, multi-tiered soft play area for kids featuring padded obstacle courses, wave slides, climbing bridges, and sensory tunnels designed for healthy gross motor development.',
+    icon: 'Castle',
+    badge: 'Popular',
+  },
+  {
+    id: 'toddler-play',
+    title: 'Toddler Play Area in Nagarabhavi',
+    tag: 'Ages 6 Months – 3 Years',
+    desc: 'A dedicated, gently cushioned toddler play area in Nagarabhavi built specifically for babies and toddlers with soft foam blocks, mini ball pools, and sensory tactile toys.',
+    icon: 'Baby',
+    badge: 'Safe & Gentle',
+  },
+  {
+    id: 'trampoline-play',
+    title: 'Trampoline Jump & Sensory Ball Pit',
+    tag: 'Boundless Energy • Active Fun',
+    desc: 'Experience gravity-defying fun in our netted trampoline arena and dive into colorful, sanitized sensory ball pits engineered for safe balance and laughter.',
+    icon: 'Sparkles',
+    badge: 'High Energy',
+  },
+  {
+    id: 'weekend-activities',
+    title: 'Weekend Activities for Kids in Bangalore',
+    tag: 'Open Daily • 11 AM - 9 PM',
+    desc: 'Searching for exciting weekend activities for kids in Bangalore? Enjoy unlimited jumping, pretend grocery towns, trampoline games, and screen-free family adventures right here in Nagarabhavi.',
+    icon: 'Clock',
+    badge: 'Screen-Free',
+  },
+];
+
+// Frequently Asked Questions including user specific inquiries & high-intent SEO queries
+export const SEO_FAQ_ITEMS = [
+  {
+    question: 'Where is Slide & Glide located?',
+    answer: 'Slide & Glide is located in Nagarbhavi, Annapoorneshwari Nagar, Bangalore 560091. Our exact address is 3rd floor, No 125, S N Arcade, above Bakasura Bandi, Annapoorneshwari Nagar, Nagarbhavi, Bangalore, Karnataka 560091.',
+  },
+  {
+    question: 'What ages is the play area suitable for?',
+    answer: 'Slide & Glide is suitable for kids aged 1–10 years. We have dedicated safe zones for toddlers (1–3 years) as well as multi-level climbing, jumping trampolines, and slides for kids up to 10 years.',
+  },
+  {
+    question: 'Can I book a birthday party?',
+    answer: 'Yes, you can call our number (+91 97397 80837 / +91 99459 58367) or enquire directly at the reception for bookings and celebrations.',
+  },
+  {
+    question: 'Are socks required?',
+    answer: 'Yes, socks are required for all children and accompanying adults for safety and cleanliness. You can bring them from home or buy a pair right here at the reception.',
+  },
+  {
+    question: 'Is there parking?',
+    answer: 'Yes, there is plenty of free parking in the streets around S N Arcade.',
+  },
+  {
+    question: 'How do I get directions or make a booking?',
+    answer: 'Use the Google Maps available in the location section below to navigate directly, or call/WhatsApp us directly at +91 97397 80837 or +91 99459 58367.',
+  },
+  {
+    question: 'What are your operating hours and timings in Nagarabhavi?',
+    answer: 'Slide & Glide is open 7 days a week (Monday through Sunday) from 11:00 AM to 9:00 PM. Walk-ins are always welcome!',
+  },
+  {
+    question: 'What kids activities in Nagarabhavi are available at your indoor playground?',
+    answer: 'At Slide & Glide, kids enjoy multi-tiered soft play structures, giant ball pits, trampoline jump zones, and pretend play towns in a safe, fully sanitized indoor setting.',
+  },
+  {
+    question: 'What makes Slide & Glide great for weekend activities for kids in Bangalore?',
+    answer: 'Slide & Glide offers 100% active, screen-free physical fun. Kids run, jump on trampolines, navigate obstacle courses, and socialize in a hygienic, climate-controlled arena.',
   },
 ];

@@ -31,7 +31,7 @@ export const ContactSection: React.FC = () => {
             Contact Slide &amp; Glide
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
-            Walk-ins welcome every day. Reach out directly for birthday parties, private arena hire, or group visits.
+            Walk-ins welcome every day. Reach out directly for entry details, timings, or group visits.
           </p>
         </div>
 
@@ -165,18 +165,23 @@ export const ContactSection: React.FC = () => {
               <div className="space-y-2 mt-3 text-xs">
                 <div className="p-2 bg-slate-50 rounded-xl border border-slate-200 flex justify-between items-center">
                   <span className="font-semibold text-slate-600">Monday – Sunday</span>
-                  <span className="font-bold text-slate-900">10:00 AM – 9:00 PM</span>
+                  <span className="font-bold text-slate-900">11:00 AM – 9:00 PM</span>
                 </div>
                 <div className="p-2 bg-emerald-50 rounded-xl border border-emerald-100 flex items-center gap-1.5 text-emerald-800 text-[11px] font-semibold">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
-                  <span>Walk-ins &amp; party bookings welcome</span>
+                  <span>Walk-ins welcome every day • 11 AM - 9 PM</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-3 pt-3 border-t border-slate-100">
-              <div className="text-[11px] text-center text-slate-500">
-                Grip socks recommended • Sanitized arena
+            <div className="mt-3 pt-3 border-t border-slate-100 space-y-1">
+              <p className="text-[11px] text-slate-700 font-semibold leading-tight">
+                📍 {CONTACT_INFO.shortAddress}
+              </p>
+              <div className="text-[10px] text-slate-500 flex flex-wrap items-center justify-between gap-1">
+                <span>Socks required (bring or buy here)</span>
+                <span>•</span>
+                <span>Free street parking</span>
               </div>
             </div>
           </div>

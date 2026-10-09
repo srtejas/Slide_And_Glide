@@ -52,15 +52,33 @@ export const Footer: React.FC = () => {
               className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
               <MapPin className="w-3.5 h-3.5 text-violet-400" />
-              <span>Bangalore Google Maps</span>
+              <span>Nagarabhavi on Google Maps</span>
             </a>
           </div>
 
         </div>
 
-        {/* Bottom copyright */}
+        {/* SEO Tagline / Keyword summary */}
+        <div className="py-4 border-b border-slate-800 text-[11px] text-slate-400 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-center">
+          <span>Indoor Kids Play Area in Nagarabhavi</span>
+          <span>•</span>
+          <span>Kids Play Area Near Me</span>
+          <span>•</span>
+          <span>Indoor Playground in Nagarabhavi</span>
+          <span>•</span>
+          <span>Soft Play Area for Kids</span>
+          <span>•</span>
+          <span>Toddler Play Area in Nagarabhavi</span>
+          <span>•</span>
+          <span>Weekend Activities for Kids in Bangalore</span>
+        </div>
+
+        {/* Bottom copyright & address */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
-          <p>© {new Date().getFullYear()} Slide &amp; Glide. Bangalore, India. All rights reserved.</p>
+          <div className="text-center sm:text-left space-y-0.5">
+            <p className="text-slate-400 font-medium">{CONTACT_INFO.address}</p>
+            <p>© {new Date().getFullYear()} Slide &amp; Glide. All rights reserved.</p>
+          </div>
           <a
             href={CONTACT_INFO.whatsappUrl}
             target="_blank"

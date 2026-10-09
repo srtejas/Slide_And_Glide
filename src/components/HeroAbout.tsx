@@ -21,9 +21,9 @@ export const HeroAbout: React.FC = () => {
           </div>
 
           <div className="flex items-center justify-center gap-1.5 mb-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-violet-50 border border-violet-200 text-violet-700 text-xs font-bold">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100/90 border border-violet-200 text-violet-800 text-xs font-bold">
               <Sparkles className="w-3.5 h-3.5 text-violet-600" />
-              <span>Bangalore's Premier Indoor Children’s Play Arena &amp; Event Venue</span>
+              <span>Indoor Kids Play Area in Nagarabhavi, Bangalore</span>
             </span>
           </div>
 
@@ -35,10 +35,17 @@ export const HeroAbout: React.FC = () => {
             Jump, Play &amp; Celebrate!
           </p>
 
-          {/* About Context - Minimalist & focused */}
-          <div className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-1 text-xs sm:text-sm font-bold text-slate-600">
+            Premier Indoor Playground in Nagarabhavi • Soft Play Area &amp; Toddler Zone
+          </p>
+
+          {/* About Context - Natural keyword integration */}
+          <div className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto space-y-2">
             <p>
-              <strong>Slide &amp; Glide</strong> is designed for kids to <strong>jump, play, dance, and celebrate</strong> in a safe, vibrant, and engaging environment. Featuring soft-play structures, trampolines, sensory ball pits, and private party spaces for everyday play, birthday parties, and family gatherings.
+              Looking for the best <strong>kids play area near me</strong>? <strong>Slide &amp; Glide</strong> is Bangalore’s favorite <strong>indoor kids play area in Nagarabhavi</strong>, designed for children to jump, play, dance, and explore in a spotless, 100% screen-free environment.
+            </p>
+            <p className="text-xs sm:text-sm text-slate-500">
+              Featuring an expansive multi-tiered <strong>indoor playground in Nagarabhavi</strong>, dedicated <strong>toddler play area</strong>, high-bounce trampoline zones, and active <strong>weekend activities for kids in Bangalore</strong>. Open daily 11:00 AM – 9:00 PM.
             </p>
           </div>
 
@@ -116,6 +123,16 @@ export const HeroAbout: React.FC = () => {
             </a>
           </div>
 
+          {/* Quick Location & Timings Badge */}
+          <div className="mt-4 inline-flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-700 bg-slate-100/80 border border-slate-200/80 px-3.5 py-1.5 rounded-full">
+            <span className="flex items-center gap-1 text-violet-700">
+              <MapPin className="w-3.5 h-3.5" />
+              <span>{CONTACT_INFO.shortAddress}</span>
+            </span>
+            <span className="text-slate-400 hidden sm:inline">•</span>
+            <span className="text-emerald-700 font-bold">Open Daily 11:00 AM – 9:00 PM</span>
+          </div>
+
         </div>
 
         {/* Minimalist Story & Purpose Accordion Card */}
@@ -176,10 +193,10 @@ export const HeroAbout: React.FC = () => {
               </div>
             </div>
             <div className="bg-white rounded-xl p-2 border border-amber-100 flex items-center gap-2">
-              <span className="text-base">🎂</span>
+              <span className="text-base">⭐</span>
               <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 block truncate">Birthday Parties</span>
-                <span className="text-[10px] text-slate-500 block truncate">Hassle-free celebrations</span>
+                <span className="text-xs font-bold text-slate-900 block truncate">Trampolines &amp; Balls</span>
+                <span className="text-[10px] text-slate-500 block truncate">High-energy fun</span>
               </div>
             </div>
           </div>

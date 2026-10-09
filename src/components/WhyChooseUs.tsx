@@ -27,10 +27,10 @@ export const WhyChooseUs: React.FC = () => {
             <span>The Slide &amp; Glide Promise</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
-            Slide &amp; Glide: Why Choose Us?
+            Why Choose Our Indoor Playground in Nagarabhavi?
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Where 100% screen-free active fun meets whole-child developmental growth and spotless, hospital-grade daily cleanliness.
+            Rated Bangalore’s favorite destination for 100% screen-free fun, whole-child motor development, gentle <strong>toddler play area in Nagarabhavi</strong>, and spotless, hospital-grade daily cleanliness.
           </p>
         </div>
 
@@ -153,13 +153,13 @@ export const WhyChooseUs: React.FC = () => {
         <div className="rounded-2xl sm:rounded-3xl border border-violet-100 bg-gradient-to-r from-violet-900 via-purple-900 to-indigo-950 text-white p-6 sm:p-8 shadow-md">
           <div className="max-w-3xl mx-auto text-center space-y-3">
             <span className="text-xs font-black uppercase tracking-wider text-pink-300 bg-white/10 px-3 py-1 rounded-full">
-              Ready for Smiles &amp; Boundless Energy?
+              Looking for a Kids Play Area Near Me?
             </span>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-black font-['Fredoka',sans-serif] tracking-tight">
-              Experience Slide &amp; Glide in Bangalore Today
+              Best Weekend Activities for Kids in Bangalore
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl mx-auto">
-              Walk-ins are open every day from 10:00 AM to 9:00 PM. Host your child’s dream birthday party or enjoy relaxed everyday indoor play.
+              Walk-ins are open every day from 11:00 AM to 9:00 PM in Nagarabhavi. Drop in for active, screen-free playtime and exciting weekend adventures.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
