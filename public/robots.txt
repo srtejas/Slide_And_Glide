@@ -10,4 +10,4 @@ Allow: /favicon.png
 Allow: /favicon.svg
 
 # Sitemaps
-Sitemap: https://slideandglide.in/sitemap.xml
+Sitemap: https://slide-and-glide.vercel.app/sitemap.xml
