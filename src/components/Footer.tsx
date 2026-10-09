@@ -64,7 +64,9 @@ export const Footer: React.FC = () => {
           <span>•</span>
           <span>Kids Play Area Near Me</span>
           <span>•</span>
-          <span>Indoor Playground in Nagarabhavi</span>
+          <span>Kids Birthday Party Venue in Nagarabhavi</span>
+          <span>•</span>
+          <span>Birthday Party Packages for Kids</span>
           <span>•</span>
           <span>Soft Play Area for Kids</span>
           <span>•</span>

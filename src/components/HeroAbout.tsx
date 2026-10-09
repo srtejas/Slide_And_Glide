@@ -36,7 +36,7 @@ export const HeroAbout: React.FC = () => {
           </p>
 
           <p className="mt-1 text-xs sm:text-sm font-bold text-slate-600">
-            Premier Indoor Playground in Nagarabhavi • Soft Play Area &amp; Toddler Zone
+            Premier Indoor Playground in Nagarabhavi • Soft Play Area &amp; Kids Birthday Party Venue
           </p>
 
           {/* About Context - Natural keyword integration */}
@@ -45,7 +45,7 @@ export const HeroAbout: React.FC = () => {
               Looking for the best <strong>kids play area near me</strong>? <strong>Slide &amp; Glide</strong> is Bangalore’s favorite <strong>indoor kids play area in Nagarabhavi</strong>, designed for children to jump, play, dance, and explore in a spotless, 100% screen-free environment.
             </p>
             <p className="text-xs sm:text-sm text-slate-500">
-              Featuring an expansive multi-tiered <strong>indoor playground in Nagarabhavi</strong>, dedicated <strong>toddler play area</strong>, high-bounce trampoline zones, and active <strong>weekend activities for kids in Bangalore</strong>. Open daily 11:00 AM – 9:00 PM.
+              Featuring an expansive multi-tiered <strong>indoor playground in Nagarabhavi</strong>, dedicated <strong>toddler play area</strong>, high-bounce trampoline zones, and memorable <strong>kids birthday party venue</strong> packages. Open daily 11:00 AM – 9:00 PM.
             </p>
           </div>
 
@@ -193,10 +193,10 @@ export const HeroAbout: React.FC = () => {
               </div>
             </div>
             <div className="bg-white rounded-xl p-2 border border-amber-100 flex items-center gap-2">
-              <span className="text-base">⭐</span>
+              <span className="text-base">🎂</span>
               <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 block truncate">Trampolines &amp; Balls</span>
-                <span className="text-[10px] text-slate-500 block truncate">High-energy fun</span>
+                <span className="text-xs font-bold text-slate-900 block truncate">Birthday Parties</span>
+                <span className="text-[10px] text-slate-500 block truncate">Celebration packages</span>
               </div>
             </div>
           </div>

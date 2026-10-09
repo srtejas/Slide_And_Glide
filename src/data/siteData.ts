@@ -24,6 +24,7 @@ export const CONTACT_INFO = {
   landmark: 'Above Bakasura Bandi, S N Arcade (3rd Floor)',
   pinCode: '560091',
   whatsappUrl: 'https://wa.me/919538678201?text=Hi%20Slide%20%26%20Glide!%20I%20would%20like%20to%20inquire%20about%20entry%20and%20visiting%20timings.',
+  whatsappBirthdayUrl: 'https://wa.me/919538678201?text=Hi%20Slide%20%26%20Glide!%20I%20would%20like%20to%20inquire%20about%20booking%20a%20kids%20birthday%20party%20at%20your%20Nagarabhavi%20arena.',
   googleListingUrl: 'https://maps.app.goo.gl/zLi3pC3UZUMYc77M7?g_st=aw',
   googleReviewUrl: 'https://maps.app.goo.gl/zLi3pC3UZUMYc77M7?g_st=aw',
 };
@@ -68,6 +69,13 @@ export const PHOTOS = [
     category: 'Creative Play',
     src: pretendImg,
     description: 'Role-play kitchen, grocery stands, and dress-up stations sparking social imagination.',
+  },
+  {
+    id: 'birthday-parties',
+    title: 'Kids Birthday Party Venue in Nagarabhavi',
+    category: 'Birthday Parties',
+    src: partyImg,
+    description: 'Joyful birthday celebrations with cake cutting, music, active play, and stress-free hosting.',
   },
 ];
 
@@ -219,6 +227,66 @@ export const SERVICES_LIST = [
     icon: 'Clock',
     badge: 'Screen-Free',
   },
+];
+
+// Birthday Party Packages for Kids & Celebrations in Nagarabhavi
+export const BIRTHDAY_PACKAGES = [
+  {
+    id: 'starter-party',
+    name: 'Joyful Play Party',
+    tag: 'Up to 12 Kids • Most Popular',
+    duration: '90 Mins Play + 30 Mins Celebration',
+    price: 'Custom Enquiries',
+    features: [
+      'Access to multi-level soft play, slides & sensory ball pit',
+      'Dedicated celebration space for cake cutting',
+      'Lively party music & festive balloon setup',
+      'Complimentary pair of grip socks for the birthday child',
+      'Dedicated arena team member assisting throughout the event',
+    ],
+    highlight: 'Ideal for intimate family birthdays, toddler playgroups & first birthdays',
+    badge: 'Popular',
+  },
+  {
+    id: 'grand-party',
+    name: 'Grand Adventure Party',
+    tag: '12–25 Kids • Premium Fun',
+    duration: '2 Hours Full Arena Play + 45 Mins Celebration',
+    price: 'Custom Enquiries',
+    features: [
+      'Full access to all zones: Toddler Zone, Trampolines & Soft Play',
+      'Reserved party seating with decorated cake table & photo corner',
+      'Dedicated party coordinator & fun interactive games assistance',
+      'Designated food & refreshment serving zone',
+      'Complimentary grip socks for the birthday child & special guest rate',
+      'Digital invitation templates to share with friends & family',
+    ],
+    highlight: 'Hassle-free, high-energy party experience loved by parents and kids',
+    badge: 'Best Value',
+  },
+  {
+    id: 'exclusive-party',
+    name: 'Exclusive Arena Hire',
+    tag: 'Private Venue Hire',
+    duration: 'Custom Duration • Complete Privacy',
+    price: 'Custom Enquiries',
+    features: [
+      '100% private, exclusive access to the complete indoor arena',
+      'Entire facility reserved only for your invited guests and children',
+      'Customized music playlist & personalized celebration timeline',
+      'Full team of trained safety marshals & dedicated hospitality staff',
+      'Ideal for milestone birthdays, school playgroups & large celebrations',
+    ],
+    highlight: 'VIP private experience with maximum freedom, privacy, and fun',
+    badge: 'VIP Exclusive',
+  },
+];
+
+export const BIRTHDAY_PERKS = [
+  { title: '100% Screen-Free Fun', desc: 'Active physical play on safe slides, trampolines & ball pits' },
+  { title: 'Hygienic & Sanitized', desc: 'Air-conditioned, sparkling clean indoor arena sanitized daily' },
+  { title: 'Zero Stress for Parents', desc: 'Our team assists with setup and coordination so you relax' },
+  { title: 'Convenient Nagarbhavi Spot', desc: 'S N Arcade, above Bakasura Bandi with plenty of street parking' },
 ];
 
 // Frequently Asked Questions including user specific inquiries & high-intent SEO queries

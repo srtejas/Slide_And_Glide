@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
   // Streamlined navigation links with SEO targets
   const navLinks = [
     { label: 'About', href: '#about' },
-    { label: 'Play Experiences', href: '#services' },
+    { label: 'Play & Parties', href: '#services' },
     { label: 'Why Choose Us', href: '#why-us' },
     { label: 'Photos', href: '#photos' },
     { label: 'FAQ', href: '#faq' },
