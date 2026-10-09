@@ -16,6 +16,42 @@ async function startServer() {
   app.get("/healthz", healthHandler);
   app.get("/_health", healthHandler);
 
+  // Logo upload endpoint supporting direct replacement with exact original file
+  app.use(express.json({ limit: "25mb" }));
+  app.post("/api/upload-logo", (req, res) => {
+    try {
+      const { dataBase64 } = req.body;
+      if (!dataBase64) {
+        return res.status(400).json({ error: "Missing dataBase64" });
+      }
+      const base64Data = dataBase64.replace(/^data:image\/\w+;base64,/, "");
+      const buffer = Buffer.from(base64Data, "base64");
+      
+      const publicLogo = path.join(process.cwd(), "public", "logo.png");
+      const srcLogo = path.join(process.cwd(), "src", "assets", "images", "logo.png");
+      const srcLogoCap = path.join(process.cwd(), "src", "assets", "images", "Logo.png");
+      const faviconPng = path.join(process.cwd(), "public", "favicon.png");
+      const faviconIco = path.join(process.cwd(), "public", "favicon.ico");
+      
+      fs.writeFileSync(publicLogo, buffer);
+      fs.writeFileSync(srcLogo, buffer);
+      fs.writeFileSync(srcLogoCap, buffer);
+      fs.writeFileSync(faviconPng, buffer);
+      
+      try {
+        const { execSync } = require("child_process");
+        execSync(`/usr/bin/convert "${faviconPng}" -define icon:auto-resize=64,48,32,16 "${faviconIco}"`);
+      } catch (e) {
+        console.warn("ICO resize error:", e);
+      }
+      
+      return res.status(200).json({ success: true, message: "Exact logo updated successfully across all assets!" });
+    } catch (err: any) {
+      console.error("Upload logo failed:", err);
+      return res.status(500).json({ error: err.message });
+    }
+  });
+
   // Vite middleware for development; static file server for production
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({

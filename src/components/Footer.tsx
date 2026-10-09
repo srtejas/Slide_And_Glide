@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CONTACT_INFO, IMAGES } from '../data/siteData';
-import { Phone, Mail, MapPin, MessageCircle, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram, Upload } from 'lucide-react';
+import { LogoUploaderModal } from './LogoUploaderModal';
 
 export const Footer: React.FC = () => {
+  const [isLogoModalOpen, setIsLogoModalOpen] = useState(false);
+
   return (
     <footer className="bg-slate-900 text-slate-300 py-10 text-xs">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -11,16 +14,35 @@ export const Footer: React.FC = () => {
           
           {/* Brand with Mascot Logo */}
           <div className="flex items-center gap-3">
-            <img
-              src={IMAGES.logo}
-              alt="Slide & Glide Logo"
-              className="w-10 h-10 rounded-xl object-contain bg-white/10 p-0.5"
-              referrerPolicy="no-referrer"
-            />
+            <div className="relative group">
+              <img
+                src={IMAGES.logo}
+                alt="Slide & Glide Logo"
+                className="w-12 h-12 rounded-xl object-contain bg-white/10 p-1"
+                referrerPolicy="no-referrer"
+              />
+              <button
+                type="button"
+                onClick={() => setIsLogoModalOpen(true)}
+                title="Replace with exact logo file"
+                className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-violet-600 hover:bg-violet-500 text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
+              >
+                <Upload className="w-3 h-3" />
+              </button>
+            </div>
             <div>
-              <span className="font-black text-white text-base font-['Fredoka',sans-serif]">
-                Slide &amp; Glide
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="font-black text-white text-base font-['Fredoka',sans-serif]">
+                  Slide &amp; Glide
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setIsLogoModalOpen(true)}
+                  className="text-[10px] text-violet-400 hover:text-violet-300 font-bold underline cursor-pointer"
+                >
+                  Upload Exact Logo
+                </button>
+              </div>
               <p className="text-[11px] text-violet-400 font-bold uppercase tracking-wider">
                 Jump, Play &amp; Celebrate!
               </p>
@@ -103,6 +125,12 @@ export const Footer: React.FC = () => {
         </div>
 
       </div>
+
+      <LogoUploaderModal
+        isOpen={isLogoModalOpen}
+        onClose={() => setIsLogoModalOpen(false)}
+        currentLogoUrl={IMAGES.logo}
+      />
     </footer>
   );
 };

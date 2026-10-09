@@ -4,7 +4,7 @@ import trampolineImg from '../assets/images/indian_kids_trampoline_1789843250432
 import pretendImg from '../assets/images/indian_kids_pretend_play_1789843293366.jpg';
 import partyImg from '../assets/images/indian_kids_birthday_deepika_1789843955986.jpg';
 import ballPitImg from '../assets/images/indian_kids_ball_pit_1789843265481.jpg';
-import logoImg from '../assets/images/slide_glide_logo_1789843201332.jpg';
+import logoImg from '../assets/images/logo.png';
 import whyChooseUsImg from '../assets/images/why_choose_us_1790530203822.jpg';
 
 export const CONTACT_INFO = {
