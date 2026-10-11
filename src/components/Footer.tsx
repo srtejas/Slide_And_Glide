@@ -86,8 +86,43 @@ export const Footer: React.FC = () => {
               <MapPin className="w-3.5 h-3.5 text-violet-400" />
               <span>Google Maps</span>
             </a>
+
+            <a
+              href="#blog"
+              className="flex items-center gap-1.5 text-violet-400 hover:text-violet-300 font-bold transition-colors py-1"
+            >
+              <span>Play &amp; Parenting Blog</span>
+            </a>
           </div>
 
+        </div>
+
+        {/* Blog Post Quick Navigation */}
+        <div className="py-4 border-b border-slate-800 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[11px] text-slate-400">
+          <span className="font-bold text-slate-300">Featured Parent Guides:</span>
+          <a href="#blog/benefits-of-indoor-playgrounds-for-child-development" className="hover:text-violet-300 transition-colors">
+            Benefits of Indoor Playgrounds
+          </a>
+          <span>•</span>
+          <a href="#blog/essential-safety-tips-for-indoor-kids-playgrounds" className="hover:text-violet-300 transition-colors">
+            Playground Safety Checklist
+          </a>
+          <span>•</span>
+          <a href="#blog/top-things-to-look-for-in-an-indoor-play-area" className="hover:text-violet-300 transition-colors">
+            Choosing an Indoor Play Area
+          </a>
+          <span>•</span>
+          <a href="#blog/how-to-plan-the-ultimate-kids-birthday-party-at-an-indoor-play-area" className="hover:text-violet-300 transition-colors">
+            Ultimate Kids Birthday Planning
+          </a>
+          <span>•</span>
+          <a href="#blog/why-screen-free-play-is-crucial-for-modern-kids" className="hover:text-violet-300 transition-colors">
+            Screen-Free Play Benefits
+          </a>
+          <span>•</span>
+          <a href="#blog/indoor-vs-outdoor-playgrounds-which-is-better-for-your-child" className="hover:text-violet-300 transition-colors">
+            Indoor vs. Outdoor Comparison
+          </a>
         </div>
 
         {/* SEO Tagline / Keyword summary */}

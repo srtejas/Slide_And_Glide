@@ -74,3 +74,28 @@ export interface PartyInquiry {
   specialRequests: string;
   addons: string[];
 }
+
+export interface BlogPostSection {
+  heading: string;
+  content: string;
+  keyTakeaways?: string[];
+}
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  metaTitle: string;
+  metaDescription: string;
+  targetKeyword: string;
+  relatedKeywords: string[];
+  readingTime: string;
+  publishedDate: string;
+  category: string;
+  coverImage: string;
+  excerpt: string;
+  intro: string;
+  sections: BlogPostSection[];
+  faq: { question: string; answer: string }[];
+  ctaText?: string;
+}
+
