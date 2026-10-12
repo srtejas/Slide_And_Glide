@@ -125,6 +125,21 @@ export const Footer: React.FC = () => {
           </a>
         </div>
 
+        {/* Trust & Safety Highlights Strip */}
+        <div className="py-3 border-b border-slate-800 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-slate-300 text-center">
+          <span className="flex items-center gap-1.5 text-emerald-400">
+            <span>✨</span> Cleaned Every Day (Hospital-Grade Sanitized)
+          </span>
+          <span className="text-slate-600 hidden sm:inline">•</span>
+          <span className="flex items-center gap-1.5 text-violet-400">
+            <span>📹</span> 24/7 CCTV Monitored Play Arena
+          </span>
+          <span className="text-slate-600 hidden sm:inline">•</span>
+          <span className="flex items-center gap-1.5 text-amber-400">
+            <span>🧦</span> Anti-Slip Grip Socks Mandatory
+          </span>
+        </div>
+
         {/* SEO Tagline / Keyword summary */}
         <div className="py-4 border-b border-slate-800 text-[11px] text-slate-400 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-center">
           <span>Indoor Kids Play Area in Nagarabhavi</span>

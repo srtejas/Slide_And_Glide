@@ -310,7 +310,17 @@ export const ServicesAndParties: React.FC = () => {
             </div>
 
             {/* Transparent Policies Strip */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2">
+              <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3">
+                <span className="text-xl">📹</span>
+                <div>
+                  <h5 className="text-xs font-bold text-slate-900">CCTV &amp; Daily Cleaned</h5>
+                  <p className="text-[11px] text-slate-600 mt-0.5">
+                    Continuous CCTV monitoring and deep hospital-grade cleaning every day for parents’ peace of mind.
+                  </p>
+                </div>
+              </div>
+
               <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3">
                 <span className="text-xl">🧦</span>
                 <div>

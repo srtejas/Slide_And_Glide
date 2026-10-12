@@ -102,11 +102,24 @@ export const BLOG_POSTS: BlogPost[] = [
         content: 'Toddlers (ages 1–3) have very different physical capabilities and balance compared to energetic 8-year-olds. Ensure the venue has a dedicated, enclosed toddler play area so tiny tots are never accidentally bumped into by sprinting older children. Slide & Glide enforces clear zone demarcations for tranquil toddler discovery.',
       },
       {
-        heading: '3. Inspect Daily Sanitization & Cleanliness Standards',
-        content: 'Look for transparent hygiene protocols: daily hospital-grade sanitization of high-touch handles, clean ball pits, and active climate control. Slide & Glide runs multi-cycle sanitization routines daily and features touchless hand sanitizing stations throughout the facility.',
+        heading: '3. Daily Hospital-Grade Cleaning & Multi-Cycle Sanitization',
+        content: 'Reputable indoor play arenas must be cleaned every day without compromise. Look for transparent hygiene protocols: thorough daily cleaning routines, hospital-grade disinfection of all climbing tunnels, slides, and vinyl mats, sanitized ball pits, and active climate control. Slide & Glide is rigorously cleaned every day and features contactless hand sanitizer stations throughout.',
+        keyTakeaways: [
+          'Entire play arena cleaned every day before opening',
+          'Child-safe, non-toxic hospital-grade sanitizers',
+          'Regular deep cleaning cycles for sensory ball pits'
+        ]
       },
       {
-        heading: '4. Mind the Dress Code: Comfortable & Jewelry-Free',
+        heading: '4. 24/7 CCTV Monitoring & Attentive Floor Marshals',
+        content: 'Continuous CCTV video surveillance gives parents unmatched peace of mind. Combined with vigilant on-ground play marshals, comprehensive camera monitoring ensures that rough play is immediately addressed and every child plays safely within their view at all times.',
+        keyTakeaways: [
+          'Full-facility 24/7 CCTV camera coverage',
+          'Attentive attendants keeping play friendly and secure'
+        ]
+      },
+      {
+        heading: '5. Mind the Dress Code: Comfortable & Jewelry-Free',
         content: 'Dress your children in breathable, stretchable clothing like cotton t-shirts and track pants or leggings. Avoid hooded jackets with drawstrings, loose jewelry, sharp buckles, or watches that could snag on safety netting or climbing ropes.',
       }
     ],

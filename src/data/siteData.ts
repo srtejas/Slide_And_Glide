@@ -165,8 +165,13 @@ export const DEVELOPMENT_PILLARS = [
 export const HYGIENE_STANDARDS = [
   {
     icon: 'Sparkles',
-    title: 'Daily Multi-Cycle Sanitization',
-    desc: 'All slides, climbing frames, foam pads, and surfaces are disinfected daily with child-safe, non-toxic hospital-grade sanitizers.',
+    title: 'Cleaned Every Day & Sanitized Daily',
+    desc: 'The entire play arena is cleaned every day and deeply disinfected using child-safe, non-toxic hospital-grade sanitizers before and after sessions.',
+  },
+  {
+    icon: 'Video',
+    title: '24/7 CCTV Monitored Arena',
+    desc: 'Continuous high-definition CCTV camera monitoring across all play zones, entrances, and seating areas for absolute safety and parent peace of mind.',
   },
   {
     icon: 'ShieldCheck',
@@ -187,11 +192,6 @@ export const HYGIENE_STANDARDS = [
     icon: 'HeartHandshake',
     title: 'Contactless Hand Hygiene Stations',
     desc: 'Touchless hand sanitizers installed at the reception check-in, arena gates, and play lounge areas.',
-  },
-  {
-    icon: 'CheckCircle2',
-    title: 'Strict Health & Sick Child Policy',
-    desc: 'Children showing signs of fever or illness are gently asked to reschedule to safeguard the wellbeing of every visitor.',
   },
 ];
 
@@ -368,6 +368,10 @@ export const SEO_FAQ_ITEMS = [
   {
     question: 'How do I get directions or make a booking?',
     answer: 'Use the Google Maps available in the location section below to navigate directly, or call/WhatsApp us directly at +91 97397 80837 or +91 99459 58367.',
+  },
+  {
+    question: 'Is the play area safe and hygienic? Is it CCTV monitored and cleaned every day?',
+    answer: 'Yes, absolutely! Slide & Glide is cleaned every single day and sanitized using child-safe hospital-grade disinfectants. Furthermore, our entire arena is 24/7 CCTV monitored and supervised by trained attendants to ensure complete safety and reassurance for parents.',
   },
   {
     question: 'What are your operating hours and timings in Nagarabhavi?',

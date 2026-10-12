@@ -11,7 +11,8 @@ import {
   Users, 
   Heart,
   MessageCircle,
-  Phone
+  Phone,
+  Video
 } from 'lucide-react';
 import { DEVELOPMENT_PILLARS, HYGIENE_STANDARDS, CONTACT_INFO } from '../data/siteData';
 
@@ -30,7 +31,7 @@ export const WhyChooseUs: React.FC = () => {
             Why Choose Our Indoor Playground in Nagarabhavi?
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Rated Bangalore’s favorite destination for 100% screen-free fun, whole-child motor development, gentle <strong>toddler play area in Nagarabhavi</strong>, and spotless, hospital-grade daily cleanliness.
+            Rated Bangalore’s favorite destination for 100% screen-free fun, whole-child motor development, gentle <strong>toddler play area in Nagarabhavi</strong>, <strong>24/7 CCTV surveillance</strong>, and spotless <strong>daily cleaning &amp; hospital-grade sanitization</strong>.
           </p>
         </div>
 
@@ -43,29 +44,29 @@ export const WhyChooseUs: React.FC = () => {
               </div>
               <div>
                 <span className="text-[10px] font-black tracking-wider uppercase text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">
-                  Cleanliness &amp; Hygiene Priority
+                  Cleaned Every Day • 24/7 CCTV Monitored
                 </span>
                 <h3 className="text-lg sm:text-xl font-black text-slate-900 font-['Fredoka',sans-serif] mt-0.5">
-                  Sanitized Daily for Safe, Worry-Free Play
+                  Cleaned Every Day &amp; Monitored for Safe, Worry-Free Play
                 </h3>
               </div>
             </div>
             <p className="text-xs text-slate-600 md:max-w-md leading-relaxed">
-              As parents ourselves, hygiene is our non-negotiable benchmark. We deep clean and disinfect our arena daily using child-safe, non-toxic hospital-grade sanitizers before every play session.
+              As parents ourselves, hygiene and safety are our non-negotiable benchmarks. Our arena is <strong>cleaned every day</strong> and thoroughly disinfected with child-safe sanitizers, and remains continuously <strong>CCTV monitored</strong> with attentive safety staff.
             </p>
           </div>
 
           {/* 6 Hygiene Features Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-5">
             {HYGIENE_STANDARDS.map((item, idx) => {
-              const icons = [
-                <Sparkles key="1" className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />,
-                <ShieldCheck key="2" className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />,
-                <Footprints key="3" className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />,
-                <Wind key="4" className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />,
-                <HeartHandshake key="5" className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />,
-                <CheckCircle2 key="6" className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />,
-              ];
+              const renderIcon = () => {
+                if (item.icon === 'Video') return <Video className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />;
+                if (item.icon === 'Footprints') return <Footprints className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />;
+                if (item.icon === 'Wind') return <Wind className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />;
+                if (item.icon === 'HeartHandshake') return <HeartHandshake className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />;
+                if (item.icon === 'ShieldCheck') return <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />;
+                return <Sparkles className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />;
+              };
 
               return (
                 <div 
@@ -73,7 +74,7 @@ export const WhyChooseUs: React.FC = () => {
                   className="p-3.5 rounded-xl bg-white border border-emerald-100/90 shadow-2xs hover:border-emerald-300 transition-colors flex items-start gap-2.5"
                 >
                   <div className="p-1.5 rounded-lg bg-emerald-50 shrink-0">
-                    {icons[idx % icons.length]}
+                    {renderIcon()}
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-900 font-['Fredoka',sans-serif]">

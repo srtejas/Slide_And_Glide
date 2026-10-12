@@ -46,7 +46,7 @@ export const HeroAbout: React.FC = () => {
           {/* About Context - Natural keyword integration */}
           <div className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto space-y-2">
             <p>
-              Looking for the best <strong>kids play area near me</strong>? <strong>Slide &amp; Glide</strong> is Bangalore’s favorite <strong>indoor kids play area in Nagarabhavi</strong>, designed for children to jump, play, dance, and explore in a spotless, 100% screen-free environment.
+              Looking for the best <strong>kids play area near me</strong>? <strong>Slide &amp; Glide</strong> is Bangalore’s favorite <strong>indoor kids play area in Nagarabhavi</strong>, designed for children to jump, play, dance, and explore in a safe, <strong>CCTV monitored</strong>, <strong>cleaned every day</strong> environment.
             </p>
             <p className="text-xs sm:text-sm text-slate-500">
               Featuring an expansive multi-tiered <strong>indoor playground in Nagarabhavi</strong>, dedicated <strong>toddler play area</strong>, high-bounce trampoline zones, and memorable <strong>kids birthday party venue</strong> packages. Open daily 11:00 AM – 9:00 PM.
@@ -175,28 +175,35 @@ export const HeroAbout: React.FC = () => {
                 We founded <strong>Slide &amp; Glide</strong> to change that: a vibrant indoor arena where kids disconnect from screens and reconnect with pure joy—jumping high on trampolines, exploring multi-tiered slides, diving into sensory ball pits, and making lifelong friendships.
               </p>
               <p>
-                Every corner is crafted with a parent’s eye for safety: hospital-grade cleanliness, rounded soft foam padding, and trained attendants.
+                Every corner is crafted with a parent’s eye for safety: <strong>cleaned every day</strong> with hospital-grade sanitizers, continuous <strong>CCTV monitoring</strong> across all zones, rounded soft foam padding, and trained attendants.
               </p>
             </div>
           )}
 
-          {/* 3 Core Highlights in compact format */}
-          <div className="mt-3.5 grid grid-cols-1 sm:grid-cols-3 gap-2 pt-3 border-t border-violet-100">
+          {/* 4 Core Highlights in compact format */}
+          <div className="mt-3.5 grid grid-cols-2 sm:grid-cols-4 gap-2 pt-3 border-t border-violet-100">
             <div className="bg-white rounded-xl p-2 border border-violet-100 flex items-center gap-2">
+              <span className="text-base">📹</span>
+              <div className="min-w-0">
+                <span className="text-xs font-bold text-slate-900 block truncate">CCTV Monitored</span>
+                <span className="text-[10px] text-slate-500 block truncate">24/7 security watch</span>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl p-2 border border-emerald-100 flex items-center gap-2">
+              <span className="text-base">✨</span>
+              <div className="min-w-0">
+                <span className="text-xs font-bold text-slate-900 block truncate">Cleaned Every Day</span>
+                <span className="text-[10px] text-slate-500 block truncate">Sanitized hospital-grade</span>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl p-2 border border-purple-100 flex items-center gap-2">
               <span className="text-base">🏃‍♂️</span>
               <div className="min-w-0">
                 <span className="text-xs font-bold text-slate-900 block truncate">100% Screen-Free</span>
-                <span className="text-[10px] text-slate-500 block truncate">Active physical movement</span>
+                <span className="text-[10px] text-slate-500 block truncate">Active motor play</span>
               </div>
             </div>
             <div className="bg-white rounded-xl p-2 border border-pink-100 flex items-center gap-2">
-              <span className="text-base">🛡️</span>
-              <div className="min-w-0">
-                <span className="text-xs font-bold text-slate-900 block truncate">Hospital-Grade Safety</span>
-                <span className="text-[10px] text-slate-500 block truncate">Sanitized soft-play foam</span>
-              </div>
-            </div>
-            <div className="bg-white rounded-xl p-2 border border-amber-100 flex items-center gap-2">
               <span className="text-base">🎂</span>
               <div className="min-w-0">
                 <span className="text-xs font-bold text-slate-900 block truncate">Birthday Parties</span>

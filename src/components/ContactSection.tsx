@@ -183,12 +183,14 @@ export const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-3 pt-3 border-t border-slate-100 space-y-1">
+            <div className="mt-3 pt-3 border-t border-slate-100 space-y-1.5">
               <p className="text-[11px] text-slate-700 font-semibold leading-tight">
                 📍 {CONTACT_INFO.shortAddress}
               </p>
-              <div className="text-[10px] text-slate-500 flex flex-wrap items-center justify-between gap-1">
-                <span>Socks required (bring or buy here)</span>
+              <div className="text-[10px] text-slate-500 flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                <span className="text-emerald-700 font-bold">✓ Cleaned every day</span>
+                <span>•</span>
+                <span className="text-violet-700 font-bold">✓ 24/7 CCTV monitored</span>
                 <span>•</span>
                 <span>Free street parking</span>
               </div>
