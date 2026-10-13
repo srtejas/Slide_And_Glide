@@ -73,11 +73,11 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'essential-safety-tips-for-indoor-kids-playgrounds',
     title: 'Safety Tips for Indoor Kids Playgrounds: A Parent’s Complete Checklist',
     metaTitle: 'Safety Tips for Indoor Kids Playgrounds | Slide & Glide Nagarabhavi',
-    metaDescription: 'Essential safety checklist for parents visiting indoor play areas in Bangalore: grip socks, adult supervision, sanitization standards, and age-segregated zones.',
+    metaDescription: 'Essential safety checklist for parents visiting indoor play areas in Bangalore: socks mandatory, adult supervision, sanitization standards, and age-segregated zones.',
     targetKeyword: 'safety tips for indoor kids playgrounds',
     relatedKeywords: [
       'indoor playground safety rules',
-      'grip socks for kids play area',
+      'socks mandatory for kids play area',
       'hygienic play area bangalore',
       'soft play safety nagarabhavi',
       'toddler play precautions'
@@ -90,8 +90,8 @@ export const BLOG_POSTS: BlogPost[] = [
     intro: 'As parents, our number one priority is always the safety and wellbeing of our children. When stepping into an indoor adventure zone, parents want complete peace of mind that equipment is sanitized, certified, and monitored. Here is the ultimate safety and hygiene checklist every parent should review before and during their visit to an indoor play arena.',
     sections: [
       {
-        heading: '1. Always Wear High-Traction Grip Socks',
-        content: 'Standard cotton socks can turn smooth vinyl mats and fiberglass slide landings into slip hazards, while bare feet can transmit dirt. Certified anti-slip grip socks with rubberized bottom soles ensure optimal traction on trampolines and climbing ramps. At Slide & Glide, grip socks are mandatory for all children (and clean socks for accompanying adults). You can bring them from home or pick up fresh pairs right at our front desk.',
+        heading: '1. Socks Are Mandatory for Safety & Hygiene',
+        content: 'Standard footwear is kept in shoe lockers, and clean socks are mandatory for all children and accompanying adults inside the arena. Socks ensure clean equipment, prevent slips, and maintain hygiene on trampolines and climbing ramps. At Slide & Glide, socks are mandatory for all children and accompanying adults. You can bring clean socks from home or pick up fresh pairs right at our front desk.',
         keyTakeaways: [
           'Prevents slipping on vinyl play pads and slides',
           'Maintains pristine hygiene inside all play equipment'
@@ -126,7 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faq: [
       {
         question: 'Can parents enter the play equipment with their child?',
-        answer: 'Yes! At Slide & Glide, 1 accompanying guardian entry is included with every play pass. Parents can supervise their toddlers up-close inside designated soft play sections.'
+        answer: 'Yes! At Slide & Glide, 1 accompanying guardian entry is included with every play session entry. Parents can supervise their toddlers up-close inside designated soft play sections.'
       },
       {
         question: 'Are the play structures inspected regularly?',
@@ -174,7 +174,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: '4. Transparent Pricing Without Hidden Surcharges',
-        content: 'Avoid places with confusing tiered charges or unexpected entry fees for parents. Choose centers offering clear 60, 90, and 120-minute passes with accompanying parent entry included by default.',
+        content: 'Avoid places with confusing tiered charges or unexpected entry fees for parents. Choose centers offering clear play sessions starting from 249 onwards with accompanying parent entry included by default.',
       }
     ],
     faq: [
@@ -219,7 +219,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: 'Step 2: Streamline Your Guest List & Send Clear Sock Reminders',
-        content: 'When sending digital invites, clearly inform guests that the party is hosted at an indoor soft play arena and that all children and adults must bring grip socks or socks. Slide & Glide provides digital invitation templates and also keeps grip socks available at reception for forgetful guests.',
+        content: 'When sending digital invites, clearly inform guests that the party is hosted at an indoor soft play arena and that socks are mandatory for all children and adults. Slide & Glide provides digital invitation templates and also keeps socks available at reception for forgetful guests.',
       },
       {
         heading: 'Step 3: Pick a Package with Dedicated Event Coordination',
@@ -329,7 +329,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: '3. Hygiene & Sanitization Standards',
-        content: 'Outdoor park sandpits are often exposed to neighborhood birds, street dogs, and litter. In contrast, indoor facilities like Slide & Glide enforce strict no-shoe / grip-sock policies and conduct daily sanitization cycles on all balls, slides, and crawl tubes.',
+        content: 'Outdoor park sandpits are often exposed to neighborhood birds, street dogs, and litter. In contrast, indoor facilities like Slide & Glide enforce strict no-shoe / socks-mandatory policies and conduct daily sanitization cycles on all balls, slides, and crawl tubes.',
       },
       {
         heading: '4. Dedicated Parental Visibility & Relaxing Lounge',

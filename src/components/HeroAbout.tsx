@@ -39,22 +39,57 @@ export const HeroAbout: React.FC = () => {
             Jump, Play &amp; Celebrate!
           </p>
 
-          <p className="mt-1 text-xs sm:text-sm font-bold text-slate-600">
-            Premier Indoor Playground in Nagarabhavi • Soft Play Area &amp; Kids Birthday Party Venue
+          <p className="mt-1 text-xs sm:text-sm font-bold text-slate-700">
+            Indoor Playground &amp; Birthday Party Venue in Nagarabhavi • Clean, Safe &amp; Screen-Free
           </p>
 
-          {/* About Context - Natural keyword integration */}
+          {/* Age Demarcation & Pricing Callout */}
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+            <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-violet-100 text-violet-900 text-xs font-bold border border-violet-200">
+              👶 Ages 1–10 Years (Dedicated 1–3 Yrs Toddler Zone)
+            </span>
+            <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold border border-emerald-200">
+              🏷️ Play Sessions Start from 249 Onwards
+            </span>
+          </div>
+
+          {/* About Context - Parent-first, authentic & transparent copy */}
           <div className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto space-y-2">
             <p>
-              Looking for the best <strong>kids play area near me</strong>? <strong>Slide &amp; Glide</strong> is Bangalore’s favorite <strong>indoor kids play area in Nagarabhavi</strong>, designed for children to jump, play, dance, and explore in a safe, <strong>CCTV monitored</strong>, <strong>cleaned every day</strong> environment.
+              Welcome to <strong>Slide &amp; Glide</strong> — Nagarabhavi’s family-favorite indoor play arena, created for children to jump, explore, and celebrate in a safe, <strong>24/7 CCTV monitored</strong>, and <strong>cleaned every day</strong> environment.
             </p>
             <p className="text-xs sm:text-sm text-slate-500">
-              Featuring an expansive multi-tiered <strong>indoor playground in Nagarabhavi</strong>, dedicated <strong>toddler play area</strong>, high-bounce trampoline zones, and memorable <strong>kids birthday party venue</strong> packages. Open daily 11:00 AM – 9:00 PM.
+              Our entire arena is built for children aged <strong>1–10 years</strong>, featuring a dedicated safe soft play foam zone for toddlers (<strong>ages 1–3</strong>). On weekdays, kids love enjoying our joyful <strong>slides and swings along with the multi-level obstacle area</strong>, trampolines, and ball pits!
             </p>
           </div>
 
+          {/* Upfront "Know Before You Visit" Pre-Publish Checklist Banner */}
+          <div className="mt-5 p-3 sm:p-3.5 rounded-xl bg-violet-50/80 border border-violet-200 max-w-2xl mx-auto text-left">
+            <p className="text-xs font-bold text-violet-900 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+              <span>📋 Quick Checklist Before You Visit</span>
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+              <div className="flex items-center gap-1.5">
+                <span className="text-emerald-600 font-black">✓</span>
+                <span><strong>Socks mandatory</strong> (bring your own or get at reception)</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-emerald-600 font-black">✓</span>
+                <span><strong>1 accompanying adult</strong> included free with child admission</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-emerald-600 font-black">✓</span>
+                <span><strong>Cleaned every day</strong> &amp; 24/7 CCTV surveillance</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-emerald-600 font-black">✓</span>
+                <span><strong>Free street parking</strong> &amp; elevator/lift access</span>
+              </div>
+            </div>
+          </div>
+
           {/* 4 Developmental Pillars - Ultra Compact Row */}
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-2xl mx-auto text-left">
+          <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-2xl mx-auto text-left">
             <div className="p-2.5 rounded-xl bg-violet-50/70 border border-violet-100 flex items-center gap-2">
               <div className="w-7 h-7 rounded-lg bg-violet-600 text-white flex items-center justify-center shrink-0">
                 <Activity className="w-3.5 h-3.5" />
@@ -96,7 +131,7 @@ export const HeroAbout: React.FC = () => {
             </div>
           </div>
 
-          {/* Quick Action CTAs */}
+          {/* Quick Action CTAs - Primary Call limited to 1 primary number */}
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
             <a
               href={CONTACT_INFO.whatsappUrl}
@@ -108,12 +143,22 @@ export const HeroAbout: React.FC = () => {
               <span>WhatsApp Us</span>
             </a>
 
+            {/* Single primary Call-To-Action button */}
             <a
-              href={`tel:${CONTACT_INFO.phone1Raw}`}
+              href={`tel:${CONTACT_INFO.primaryPhoneRaw}`}
               className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-colors min-h-[40px]"
+              title="Call Primary Number"
             >
               <Phone className="w-4 h-4" />
-              <span>Call: 9739780837</span>
+              <span>Call: {CONTACT_INFO.primaryPhone}</span>
+            </a>
+
+            <a
+              href="#party-enquiry"
+              className="px-4 py-2.5 rounded-xl bg-pink-600 hover:bg-pink-700 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-colors min-h-[40px]"
+            >
+              <Sparkles className="w-4 h-4" />
+              <span>Enquire Birthday Party</span>
             </a>
 
             <a
@@ -127,8 +172,13 @@ export const HeroAbout: React.FC = () => {
             </a>
           </div>
 
+          {/* Phone Numbers clarity notice */}
+          <p className="mt-2 text-[11px] text-slate-500">
+            Arena Desk: <strong className="text-slate-800">{CONTACT_INFO.phone1}</strong> (Primary) • Alt: <span className="text-slate-700">{CONTACT_INFO.phone2}</span>
+          </p>
+
           {/* Quick Location & Timings Badge */}
-          <div className="mt-4 inline-flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-700 bg-slate-100/80 border border-slate-200/80 px-3.5 py-1.5 rounded-full">
+          <div className="mt-3 inline-flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-700 bg-slate-100/80 border border-slate-200/80 px-3.5 py-1.5 rounded-full">
             <span className="flex items-center gap-1 text-violet-700">
               <MapPin className="w-3.5 h-3.5" />
               <span>{CONTACT_INFO.shortAddress}</span>

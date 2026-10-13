@@ -1,6 +1,6 @@
 {
   "name": "Slide & Glide",
-  "description": "Visit Slide & Glide, an indoor kids' play area and birthday party venue in Nagarbhavi, Bengaluru. Explore play sessions, prices and birthday bookings.",
+  "description": "Visit Slide & Glide, an indoor kids' play area and birthday party venue in Nagarabhavi, Bengaluru. Explore play sessions, prices and birthday bookings.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

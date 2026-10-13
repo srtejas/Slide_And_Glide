@@ -14,6 +14,7 @@ export const Navbar: React.FC = () => {
     { label: 'Play Sessions', href: '#play-sessions' },
     { label: 'Pricing', href: '#pricing' },
     { label: 'Birthdays', href: '#birthdays' },
+    { label: 'Tools', href: '#tools' },
     { label: 'Photos', href: '#photos' },
     { label: 'Blog', href: '#blog' },
     { label: 'FAQ', href: '#faq' },
@@ -157,15 +158,16 @@ export const Navbar: React.FC = () => {
         {/* Mobile-Friendly Header Controls */}
         <div className="flex items-center gap-1.5 md:hidden">
           
-          {/* Quick Call Button on Mobile Header */}
-          <button
-            onClick={() => setMobileMenuOpen(true)}
+          {/* Quick Call Button on Mobile Header directly to Primary Number */}
+          <a
+            href={`tel:${CONTACT_INFO.primaryPhoneRaw}`}
             className="p-2 sm:px-3 sm:py-1.5 text-slate-700 hover:text-violet-700 bg-slate-100 hover:bg-violet-50 rounded-xl text-xs font-bold flex items-center gap-1 transition-colors min-h-[38px]"
-            aria-label="Call options"
+            aria-label={`Call primary ${CONTACT_INFO.primaryPhone}`}
+            title={`Call primary ${CONTACT_INFO.primaryPhone}`}
           >
             <Phone className="w-4 h-4 text-violet-600" />
             <span className="hidden sm:inline">Call</span>
-          </button>
+          </a>
 
           {/* WhatsApp Button */}
           <a

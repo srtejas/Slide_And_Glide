@@ -23,7 +23,7 @@ export const FaqSection: React.FC = () => {
             Kids Activities in Nagarabhavi: Frequently Asked Questions
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Quick answers about our location in Nagarbhavi, age suitability (1–10 years), party inquiries, socks requirement, free street parking, and timings.
+            Quick answers about our location in Nagarabhavi, age suitability (1–10 years), party inquiries, socks requirement, free street parking, and timings.
           </p>
         </div>
 

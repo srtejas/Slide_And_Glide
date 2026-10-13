@@ -27,15 +27,23 @@ import {
   CONTACT_INFO, 
   IMAGES 
 } from '../data/siteData';
+import { PartyEnquiryForm } from './PartyEnquiryForm';
 
 export const ServicesAndParties: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'play' | 'pricing' | 'parties'>('play');
 
-  // Handle URL hash changes (e.g. #birthdays, #pricing, #play-sessions)
+  // Handle URL hash changes (e.g. #birthdays, #pricing, #play-sessions, #party-enquiry)
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.toLowerCase();
-      if (hash === '#birthdays' || hash === '#parties' || hash === '#birthday' || hash === '#party-packages') {
+      if (
+        hash === '#birthdays' || 
+        hash === '#parties' || 
+        hash === '#birthday' || 
+        hash === '#party-packages' ||
+        hash === '#party-enquiry' ||
+        hash === '#enquiry'
+      ) {
         setActiveTab('parties');
       } else if (hash === '#pricing' || hash === '#rates' || hash === '#session-rates') {
         setActiveTab('pricing');
@@ -103,7 +111,7 @@ export const ServicesAndParties: React.FC = () => {
               }`}
             >
               <Tag className="w-4 h-4" />
-              <span>Pricing &amp; Passes</span>
+              <span>Pricing</span>
             </button>
 
             <button
@@ -197,7 +205,7 @@ export const ServicesAndParties: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-900">Check Play Session Pricing</p>
-                    <p className="text-[11px] text-slate-500">60-min, 90-min &amp; weekend passes</p>
+                    <p className="text-[11px] text-slate-500">Starts from 249 onwards</p>
                   </div>
                 </div>
                 <span className="text-xs font-bold text-violet-600 group-hover:translate-x-1 transition-transform">→</span>
@@ -223,18 +231,24 @@ export const ServicesAndParties: React.FC = () => {
           </div>
         )}
 
-        {/* TAB 2: PRICING & PLAY PASSES */}
+        {/* TAB 2: PRICING */}
         {activeTab === 'pricing' && (
           <div className="space-y-6">
             
             {/* Header info */}
-            <div className="text-center max-w-xl mx-auto">
+            <div className="text-center max-w-xl mx-auto space-y-2">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-black border border-emerald-200">
+                🏷️ Pricing Starts from 249 Onwards
+              </span>
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
                 Simple, Transparent Play Session Rates
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                Walk-ins are open every day from <strong>11:00 AM to 9:00 PM</strong>. Entry includes 1 parent/guardian companion with child admission.
+              <p className="text-xs sm:text-sm text-slate-600">
+                Walk-ins open every day from <strong>11:00 AM to 9:00 PM</strong>. Entry includes 1 parent/guardian companion with child admission.
               </p>
+              <div className="inline-block p-2 rounded-xl bg-violet-50 border border-violet-100 text-[11px] sm:text-xs text-violet-900 font-semibold">
+                👶 Entire play zone is for ages 1–10 years • Dedicated soft play foam area for 1–3 years toddlers
+              </div>
             </div>
 
             {/* Pricing Cards */}
@@ -243,7 +257,9 @@ export const ServicesAndParties: React.FC = () => {
                 <div
                   key={plan.id}
                   className={`bg-white rounded-2xl p-5 border flex flex-col justify-between transition-all ${
-                    plan.badge === 'Most Popular'
+                    plan.badge === 'Best Starting Value'
+                      ? 'border-emerald-300 shadow-md ring-2 ring-emerald-500/20'
+                      : plan.badge === 'Most Popular'
                       ? 'border-violet-300 shadow-md ring-2 ring-violet-500/20'
                       : 'border-slate-200 shadow-2xs hover:border-slate-300'
                   }`}
@@ -252,16 +268,16 @@ export const ServicesAndParties: React.FC = () => {
                     {/* Top Tag */}
                     <div className="flex items-center justify-between gap-2 mb-2.5">
                       <span className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full ${
-                        plan.badge === 'Most Popular'
+                        plan.badge === 'Best Starting Value'
+                          ? 'bg-emerald-600 text-white'
+                          : plan.badge === 'Most Popular'
                           ? 'bg-violet-600 text-white'
-                          : plan.badge === 'Best Value'
-                          ? 'bg-emerald-100 text-emerald-800 border border-emerald-200'
                           : 'bg-slate-100 text-slate-700'
                       }`}>
                         {plan.badge}
                       </span>
-                      <span className="text-[11px] font-semibold text-slate-500">
-                        {plan.suitableFor}
+                      <span className="text-[10px] font-bold text-violet-700 bg-violet-50 px-2 py-0.5 rounded-md">
+                        {plan.tag}
                       </span>
                     </div>
 
@@ -269,7 +285,20 @@ export const ServicesAndParties: React.FC = () => {
                       {plan.title}
                     </h4>
 
-                    <p className="text-xs text-violet-700 font-semibold mt-0.5 flex items-center gap-1">
+                    {/* Prominent Price Display */}
+                    <div className="mt-2 flex items-baseline gap-1.5">
+                      <span className="text-2xl sm:text-3xl font-black text-slate-900 font-['Fredoka',sans-serif]">
+                        {plan.price}
+                      </span>
+                      <span className="text-xs font-semibold text-slate-500">
+                        onwards
+                      </span>
+                    </div>
+                    <p className="text-[11px] font-bold text-emerald-700 mt-0.5">
+                      {plan.rateNote}
+                    </p>
+
+                    <p className="text-xs text-violet-700 font-semibold mt-1 flex items-center gap-1">
                       <Clock className="w-3.5 h-3.5" />
                       <span>{plan.duration}</span>
                     </p>
@@ -302,7 +331,7 @@ export const ServicesAndParties: React.FC = () => {
                       }`}
                     >
                       <MessageCircle className="w-3.5 h-3.5" />
-                      <span>Inquire at Reception</span>
+                      <span>Inquire on WhatsApp</span>
                     </a>
                   </div>
                 </div>
@@ -324,9 +353,9 @@ export const ServicesAndParties: React.FC = () => {
               <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3">
                 <span className="text-xl">🧦</span>
                 <div>
-                  <h5 className="text-xs font-bold text-slate-900">Socks Policy</h5>
+                  <h5 className="text-xs font-bold text-slate-900">Socks Mandatory</h5>
                   <p className="text-[11px] text-slate-600 mt-0.5">
-                    Grip socks are required for safety. Bring your own from home or purchase a fresh pair at our reception counter.
+                    Socks are mandatory for safety and hygiene. Bring your own from home or purchase a fresh pair at our reception counter.
                   </p>
                 </div>
               </div>
@@ -566,6 +595,9 @@ export const ServicesAndParties: React.FC = () => {
               ))}
             </div>
 
+            {/* Interactive Party Enquiry Form - Sends directly to slide.glide.0926@gmail.com */}
+            <PartyEnquiryForm />
+
             {/* Bottom Inquire Card */}
             <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-violet-900 to-indigo-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="text-center sm:text-left">
@@ -579,11 +611,11 @@ export const ServicesAndParties: React.FC = () => {
 
               <div className="flex flex-wrap items-center gap-2.5 shrink-0">
                 <a
-                  href={`tel:${CONTACT_INFO.phone1Raw}`}
+                  href={`tel:${CONTACT_INFO.primaryPhoneRaw}`}
                   className="px-3.5 py-2 rounded-xl bg-white text-slate-900 font-extrabold text-xs flex items-center gap-1.5 hover:bg-violet-50 transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5 text-violet-600" />
-                  <span>Call {CONTACT_INFO.phone1}</span>
+                  <span>Call {CONTACT_INFO.primaryPhone}</span>
                 </a>
                 <a
                   href={CONTACT_INFO.whatsappBirthdayUrl}

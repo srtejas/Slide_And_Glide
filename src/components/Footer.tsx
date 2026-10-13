@@ -52,11 +52,11 @@ export const Footer: React.FC = () => {
           {/* Quick Contact Links */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold">
             <a
-              href={`tel:${CONTACT_INFO.phoneRaw}`}
+              href={`tel:${CONTACT_INFO.primaryPhoneRaw}`}
               className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
               <Phone className="w-3.5 h-3.5 text-violet-400" />
-              <span>Call Us</span>
+              <span>Call Primary ({CONTACT_INFO.primaryPhone})</span>
             </a>
 
             <a
@@ -85,6 +85,13 @@ export const Footer: React.FC = () => {
             >
               <MapPin className="w-3.5 h-3.5 text-violet-400" />
               <span>Google Maps</span>
+            </a>
+
+            <a
+              href="#tools"
+              className="flex items-center gap-1.5 text-amber-400 hover:text-amber-300 font-bold transition-colors py-1"
+            >
+              <span>⏱️ Playtime Timer</span>
             </a>
 
             <a
@@ -136,7 +143,7 @@ export const Footer: React.FC = () => {
           </span>
           <span className="text-slate-600 hidden sm:inline">•</span>
           <span className="flex items-center gap-1.5 text-amber-400">
-            <span>🧦</span> Anti-Slip Grip Socks Mandatory
+            <span>🧦</span> Socks Mandatory
           </span>
         </div>
 

@@ -263,7 +263,7 @@ export const BlogSection: React.FC<BlogProps> = ({
                 {activePost.ctaText || 'Experience Clean, Safe & Joyful Play at Slide & Glide!'}
               </h3>
               <p className="text-xs sm:text-sm text-violet-100 leading-relaxed max-w-2xl mb-6">
-                Located at S N Arcade, 3rd Floor, above Bakasura Bandi in Annapoorneshwari Nagar, Nagarabhavi. Open daily from 11:00 AM to 9:00 PM with passes starting for walk-ins and tailored birthday party packages.
+                Located at S N Arcade, 3rd Floor, above Bakasura Bandi in Annapoorneshwari Nagar, Nagarabhavi. Open daily from 11:00 AM to 9:00 PM with play sessions starting from 249 onwards for walk-ins and tailored birthday party packages.
               </p>
               <div className="flex flex-wrap gap-3">
                 <button
@@ -273,7 +273,7 @@ export const BlogSection: React.FC<BlogProps> = ({
                   }}
                   className="bg-white text-violet-700 hover:bg-violet-50 text-xs sm:text-sm font-extrabold px-5 py-2.5 rounded-xl shadow-xs transition-colors"
                 >
-                  View Play Pricing &amp; Passes
+                  View Play Pricing
                 </button>
                 <button
                   onClick={() => {

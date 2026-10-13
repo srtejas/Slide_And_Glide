@@ -9,6 +9,7 @@ import { GoogleLocationReviews } from './components/GoogleLocationReviews';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { BlogSection } from './components/BlogSection';
+import { PlaytimeToolsSection } from './components/PlaytimeToolsSection';
 import { BLOG_POSTS } from './data/blogData';
 
 export default function App() {
@@ -64,14 +65,23 @@ export default function App() {
         );
       }
     } else {
-      document.title = 'Indoor Kids Play Area in Nagarbhavi | Slide & Glide';
+      document.title = 'Indoor Kids Play Area in Nagarabhavi | Slide & Glide';
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
         metaDesc.setAttribute(
           'content',
-          "Visit Slide & Glide, an indoor kids' play area and birthday party venue in Nagarbhavi, Bengaluru. Explore play sessions, prices and birthday bookings."
+          'Visit Slide & Glide, an indoor kids play area and birthday party venue in Nagarabhavi, Bengaluru. Play sessions starting from 249 onwards. CCTV monitored and cleaned every day.'
         );
       }
+    }
+
+    // Google tag SPA page view tracking
+    if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+      (window as any).gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: window.location.pathname + window.location.hash,
+      });
     }
   }, [currentRoute]);
 
@@ -126,6 +136,7 @@ export default function App() {
           <ServicesAndParties />
           <WhyChooseUs />
           <PhotosSection />
+          <PlaytimeToolsSection />
           {/* Featured Blog Preview Section on Home Page */}
           <section id="blog" className="py-20 bg-slate-50 border-t border-b border-slate-200">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">

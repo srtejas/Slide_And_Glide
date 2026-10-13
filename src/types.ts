@@ -33,16 +33,18 @@ export interface PartyPackage {
   themeOptions: string[];
 }
 
-export interface TicketPass {
+export interface PlayPricingPlan {
   id: string;
   title: string;
   duration: string;
-  price: number;
+  price: string | number;
   popular?: boolean;
-  notes: string;
+  notes?: string;
   features: string[];
-  targetAge: string;
+  targetAge?: string;
 }
+
+export type TicketPass = PlayPricingPlan;
 
 export interface Review {
   id: string;
