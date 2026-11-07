@@ -1,10 +1,15 @@
 import { BlogPost } from '../types';
-import heroImg from '../assets/images/indian_kids_slides_1789843237069.jpg';
-import trampolineImg from '../assets/images/indian_kids_trampoline_1789843250432.jpg';
-import pretendImg from '../assets/images/indian_kids_pretend_play_1789843293366.jpg';
-import partyImg from '../assets/images/indian_kids_birthday_deepika_1789843955986.jpg';
-import ballPitImg from '../assets/images/indian_kids_ball_pit_1789843265481.jpg';
-import whyChooseUsImg from '../assets/images/why_choose_us_1790530203822.jpg';
+import slidesImg from '../assets/images/Actual Images/Slides.jpg';
+import trampolineImg from '../assets/images/Actual Images/Trampoline.jpg';
+import merrygoroundImg from '../assets/images/Actual Images/Merrygoround.jpg';
+import partyAreaImg from '../assets/images/Actual Images/Party area.jpg';
+import birthdayImg from '../assets/images/Actual Images/Birthday.jpg';
+import ballPitImg from '../assets/images/Actual Images/Ball pit.jpg';
+import receptionImg from '../assets/images/Actual Images/Reception.jpg';
+import playAreaImg from '../assets/images/Actual Images/Play area.jpg';
+import wallClimbingImg from '../assets/images/Actual Images/Wall climbing.jpg';
+import swingsImg from '../assets/images/Actual Images/Swings.jpg';
+import magneticBoardImg from '../assets/images/Actual Images/Magnetic Sticker and Lego Board.jpg';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -23,7 +28,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: '5 min read',
     publishedDate: 'October 10, 2026',
     category: 'Child Development',
-    coverImage: whyChooseUsImg,
+    coverImage: wallClimbingImg,
     excerpt: 'In an era dominated by screens and sedentary entertainment, indoor soft play arenas offer vital physical, cognitive, social, and emotional milestones for growing kids.',
     intro: 'In modern urban Bangalore, open, unpolluted outdoor parks are becoming rarer while screen time on tablets and televisions continues to rise. For parents in Nagarabhavi, Annapoorneshwari Nagar, and surrounding West Bangalore neighborhoods, finding an active, clean, and climate-controlled environment is crucial. Dedicated indoor play centers like Slide & Glide provide far more than just casual amusement—they serve as dynamic laboratories for essential developmental milestones.',
     sections: [
@@ -85,7 +90,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: '4 min read',
     publishedDate: 'October 8, 2026',
     category: 'Safety & Hygiene',
-    coverImage: heroImg,
+    coverImage: slidesImg,
     excerpt: 'While quality play centers are designed with high-density padding and safety netting, adhering to core playground protocols ensures a 100% injury-free visit.',
     intro: 'As parents, our number one priority is always the safety and wellbeing of our children. When stepping into an indoor adventure zone, parents want complete peace of mind that equipment is sanitized, certified, and monitored. Here is the ultimate safety and hygiene checklist every parent should review before and during their visit to an indoor play arena.',
     sections: [
@@ -205,7 +210,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: '5 min read',
     publishedDate: 'October 3, 2026',
     category: 'Birthday Parties',
-    coverImage: partyImg,
+    coverImage: partyAreaImg,
     excerpt: 'Hosting a birthday at home means hours of prep, constant cleaning, and cramped quarters. Here is how an indoor play venue lets you enjoy your child’s milestone without the stress.',
     intro: 'Every parent wants to give their child a magical, memorable birthday celebration. But the reality of home parties—cleaning, furniture moving, crowd control, and entertainment planning—often leaves parents exhausted before the cake is even cut. Hosting at a specialized indoor play arena like Slide & Glide turns party day into an effortless, high-energy joyride for both kids and parents.',
     sections: [
@@ -258,7 +263,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: '5 min read',
     publishedDate: 'October 1, 2026',
     category: 'Parenting & Wellness',
-    coverImage: pretendImg,
+    coverImage: merrygoroundImg,
     excerpt: 'With mobile devices and TVs occupying hours of children’s daily routines, active physical movement has never been more vital for healthy brain wiring and emotional balance.',
     intro: 'According to pediatric associations worldwide, excessive screen time in early childhood correlates with attention deficits, delayed speech, disrupted sleep patterns, and reduced gross motor agility. Yet, in modern urban apartments, keeping active children engaged without screens is one of the toughest challenges parents face. That is where purposeful indoor play environments make an incredible difference.',
     sections: [
@@ -368,7 +373,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: '6 min read',
     publishedDate: 'November 7, 2026',
     category: 'Birthday Celebrations',
-    coverImage: partyImg,
+    coverImage: birthdayImg,
     excerpt: 'Looking for the best birthday party area near me in Nagarbhavi? Discover why Slide & Glide in Annapurneshwari Nagar is Bangalore’s top-rated choice for stress-free, joyous kids birthday celebrations.',
     intro: 'Every parent wants their child’s birthday party to be an unforgettable, magical milestone filled with giggles, high energy, and happy memories. But anyone who has hosted a birthday party at home knows the reality: cramped living rooms, chaotic crowd management, safety anxieties, and hours of exhausting cleaning after the guests leave. That is why smart Bangalore parents search for the best birthday party area near me—and find Slide & Glide in Nagarbhavi, Annapurneshwari Nagar as the ultimate celebration sanctuary. Here is the complete breakdown of why Slide & Glide is the undisputed best birthday party place for kids aged 1–10.',
     sections: [
@@ -453,7 +458,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: '5 min read',
     publishedDate: 'November 7, 2026',
     category: 'Weekend & Family Fun',
-    coverImage: heroImg,
+    coverImage: playAreaImg,
     excerpt: 'Wondering how to spend a fun, healthy weekend with kids in West Bangalore? Discover why Slide & Glide in Nagarbhavi, Annapurneshwari Nagar is the #1 weekends time pass for families.',
     intro: 'When Saturday and Sunday roll around, every Bangalore parent faces the same dilemma: how do we keep the children engaged, happy, and away from mobile screens without enduring grueling traffic across the city? If you are searching for the best weekends time pass in Nagarbhavi, Bangalore, look no further than Slide & Glide in Annapurneshwari Nagar. Designed specifically for toddlers and children aged 1–10, Slide & Glide offers an exhilarating, air-conditioned wonderland of slides, swings, trampolines, and sensory zones that turn weekend downtime into an active, healthy adventure.',
     sections: [
