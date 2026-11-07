@@ -107,6 +107,14 @@ export const Footer: React.FC = () => {
         {/* Blog Post Quick Navigation */}
         <div className="py-4 border-b border-slate-800 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[11px] text-slate-400">
           <span className="font-bold text-slate-300">Featured Parent Guides:</span>
+          <a href="#blog/best-birthday-party-place-why-do-birthdays-here-nagarabhavi" className="text-amber-300 hover:text-amber-200 font-bold transition-colors">
+            🎂 Best Birthday Party Place &amp; Why Celebrate Here
+          </a>
+          <span>•</span>
+          <a href="#blog/weekends-time-pass-in-nagarbhavi-bangalore-kids-play-area" className="text-violet-300 hover:text-violet-200 font-bold transition-colors">
+            🚀 Weekends Time Pass in Nagarbhavi
+          </a>
+          <span>•</span>
           <a href="#blog/benefits-of-indoor-playgrounds-for-child-development" className="hover:text-violet-300 transition-colors">
             Benefits of Indoor Playgrounds
           </a>
@@ -120,15 +128,11 @@ export const Footer: React.FC = () => {
           </a>
           <span>•</span>
           <a href="#blog/how-to-plan-the-ultimate-kids-birthday-party-at-an-indoor-play-area" className="hover:text-violet-300 transition-colors">
-            Ultimate Kids Birthday Planning
+            Kids Birthday Planning Checklist
           </a>
           <span>•</span>
           <a href="#blog/why-screen-free-play-is-crucial-for-modern-kids" className="hover:text-violet-300 transition-colors">
             Screen-Free Play Benefits
-          </a>
-          <span>•</span>
-          <a href="#blog/indoor-vs-outdoor-playgrounds-which-is-better-for-your-child" className="hover:text-violet-300 transition-colors">
-            Indoor vs. Outdoor Comparison
           </a>
         </div>
 

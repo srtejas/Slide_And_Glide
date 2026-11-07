@@ -1,11 +1,15 @@
-import bannerImg from '../assets/images/slide_glide_banner_1789753370227.jpg';
-import heroImg from '../assets/images/indian_kids_slides_1789843237069.jpg';
-import trampolineImg from '../assets/images/indian_kids_trampoline_1789843250432.jpg';
-import pretendImg from '../assets/images/indian_kids_pretend_play_1789843293366.jpg';
-import partyImg from '../assets/images/indian_kids_birthday_deepika_1789843955986.jpg';
-import ballPitImg from '../assets/images/indian_kids_ball_pit_1789843265481.jpg';
+import bannerImg from '../assets/images/Actual Images/Activities with time and location.png';
+import heroImg from '../assets/images/Actual Images/Activities with time and location.png';
+import trampolineImg from '../assets/images/Actual Images/Activities with time and location.png';
+import pretendImg from '../assets/images/Actual Images/Activities with time and location.png';
+import partyImg from '../assets/images/Actual Images/Activities with time and location.png';
+import ballPitImg from '../assets/images/Actual Images/Ball pit.jpg';
 import logoImg from '../assets/images/logo.png';
 import whyChooseUsImg from '../assets/images/why_choose_us_1790530203822.jpg';
+import slideImg from '../assets/images/Actual Images/Slide.jpg';
+import fullAreaImg from '../assets/images/Actual Images/Full area.jpg';
+import swingImg from '../assets/images/Actual Images/Swing.jpg';
+import boardStickerImg from '../assets/images/Actual Images/Board and Magnetic sticker.jpg';
 
 export const CONTACT_INFO = {
   primaryPhone: '+91 97397 80837',
@@ -44,6 +48,10 @@ export const IMAGES = {
   pretend: pretendImg,
   party: partyImg,
   ballPit: ballPitImg,
+  slide: slideImg,
+  fullArea: fullAreaImg,
+  swing: swingImg,
+  boardSticker: boardStickerImg,
 };
 
 // Real play arena photos for the carousel (no animated slides)
@@ -52,7 +60,7 @@ export const PHOTOS = [
     id: 'slides',
     title: 'Multi-Level Slides & Soft Play',
     category: 'Slides & Climbers',
-    src: heroImg,
+    src: slideImg,
     description: 'Safe, padded slides and crawl tunnels engineered for dynamic motor coordination.',
   },
   {
@@ -70,11 +78,32 @@ export const PHOTOS = [
     description: 'Thousands of sanitized colorful balls fostering tactile discovery and motor skills.',
   },
   {
-    id: 'pretend-play',
-    title: 'Pretend Play Town & Mini Market',
+    id: 'merry-go-round',
+    title: 'Merry-Go-Around & Pretend Town',
     category: 'Creative Play',
     src: pretendImg,
-    description: 'Role-play kitchen, grocery stands, and dress-up stations sparking social imagination.',
+    description: 'Interactive merry-go-round, role-play market, and pretend stations sparking social imagination.',
+  },
+  {
+    id: 'full-arena',
+    title: 'Full Indoor Play Arena',
+    category: 'Play Zone',
+    src: fullAreaImg,
+    description: 'Spacious, clean, air-conditioned play zone with double-layered safety padding.',
+  },
+  {
+    id: 'swing',
+    title: 'Toddler Soft Swings & Hammocks',
+    category: 'Swings',
+    src: swingImg,
+    description: 'Padded infant and toddler swings for gentle vestibular stimulation in complete comfort.',
+  },
+  {
+    id: 'board-magnetic',
+    title: 'Magnetic Board & Sticker Wall',
+    category: 'Cognitive Play',
+    src: boardStickerImg,
+    description: 'Tactile magnetic puzzle board and sticker station developing fine motor skills and creativity.',
   },
   {
     id: 'birthday-parties',
