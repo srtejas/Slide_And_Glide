@@ -1,15 +1,17 @@
 import bannerImg from '../assets/images/Actual Images/Activities with time and location.png';
 import heroImg from '../assets/images/Actual Images/Activities with time and location.png';
-import trampolineImg from '../assets/images/Actual Images/Activities with time and location.png';
-import pretendImg from '../assets/images/Actual Images/Activities with time and location.png';
-import partyImg from '../assets/images/Actual Images/Activities with time and location.png';
+import trampolineImg from '../assets/images/Actual Images/Trampoline.jpg';
+import pretendImg from '../assets/images/Actual Images/Merrygoround.jpg';
+import partyImg from '../assets/images/Actual Images/Party area.jpg';
 import ballPitImg from '../assets/images/Actual Images/Ball pit.jpg';
 import logoImg from '../assets/images/logo.png';
-import whyChooseUsImg from '../assets/images/why_choose_us_1790530203822.jpg';
-import slideImg from '../assets/images/Actual Images/Slide.jpg';
-import fullAreaImg from '../assets/images/Actual Images/Full area.jpg';
-import swingImg from '../assets/images/Actual Images/Swing.jpg';
-import boardStickerImg from '../assets/images/Actual Images/Board and Magnetic sticker.jpg';
+import whyChooseUsImg from '../assets/images/Actual Images/Reception.jpg';
+import slideImg from '../assets/images/Actual Images/Slides.jpg';
+import fullAreaImg from '../assets/images/Actual Images/Play area.jpg';
+import swingImg from '../assets/images/Actual Images/Swings.jpg';
+import boardStickerImg from '../assets/images/Actual Images/Magnetic Sticker and Lego Board.jpg';
+import wallClimbingImg from '../assets/images/Actual Images/Wall climbing.jpg';
+import birthdayImg from '../assets/images/Actual Images/Birthday.jpg';
 
 export const CONTACT_INFO = {
   primaryPhone: '+91 97397 80837',
@@ -52,6 +54,8 @@ export const IMAGES = {
   fullArea: fullAreaImg,
   swing: swingImg,
   boardSticker: boardStickerImg,
+  wallClimbing: wallClimbingImg,
+  birthday: birthdayImg,
 };
 
 // Real play arena photos for the carousel (no animated slides)
@@ -85,6 +89,13 @@ export const PHOTOS = [
     description: 'Interactive merry-go-round, role-play market, and pretend stations sparking social imagination.',
   },
   {
+    id: 'wall-climbing',
+    title: 'Soft Wall Climbing Challenge',
+    category: 'Climbing & Agility',
+    src: wallClimbingImg,
+    description: 'Padded wall climbing holds designed to build grip strength, balance, and adventurous confidence.',
+  },
+  {
     id: 'full-arena',
     title: 'Full Indoor Play Arena',
     category: 'Play Zone',
@@ -100,16 +111,23 @@ export const PHOTOS = [
   },
   {
     id: 'board-magnetic',
-    title: 'Magnetic Board & Sticker Wall',
+    title: 'Magnetic Sticker & Lego Board',
     category: 'Cognitive Play',
     src: boardStickerImg,
-    description: 'Tactile magnetic puzzle board and sticker station developing fine motor skills and creativity.',
+    description: 'Tactile magnetic puzzle board and lego wall developing fine motor skills and creativity.',
   },
   {
-    id: 'birthday-parties',
-    title: 'Kids Birthday Party Venue in Nagarabhavi',
+    id: 'party-area',
+    title: 'Dedicated Birthday Party Area',
     category: 'Birthday Parties',
     src: partyImg,
+    description: 'Vibrant celebration space with decorated cake tables, party music, and cheerful seating.',
+  },
+  {
+    id: 'birthday-celebrations',
+    title: 'Kids Birthday Party Venue in Nagarabhavi',
+    category: 'Celebrations',
+    src: birthdayImg,
     description: 'Joyful birthday celebrations with cake cutting, music, active play, and stress-free hosting.',
   },
 ];
@@ -199,7 +217,7 @@ export const HYGIENE_STANDARDS = [
   {
     icon: 'Sparkles',
     title: 'Cleaned Every Day & Sanitized Daily',
-    desc: 'The entire play arena is cleaned every day and deeply disinfected using child-safe, non-toxic hospital-grade sanitizers before and after sessions.',
+    desc: 'The entire play arena is cleaned every day and deeply disinfected using child-safe, non-toxic sanitizers before and after sessions.',
   },
   {
     icon: 'Video',
@@ -415,7 +433,7 @@ export const SEO_FAQ_ITEMS = [
   },
   {
     question: 'Is the play area safe and hygienic? Is it CCTV monitored and cleaned every day?',
-    answer: 'Yes, absolutely! Slide & Glide is cleaned every single day and sanitized using child-safe hospital-grade disinfectants. Furthermore, our entire arena is 24/7 CCTV monitored and supervised by trained attendants to ensure complete safety and reassurance for parents.',
+    answer: 'Yes, absolutely! Slide & Glide is cleaned every single day and sanitized using child-safe disinfectants. Furthermore, our entire arena is 24/7 CCTV monitored and supervised by trained attendants to ensure complete safety and reassurance for parents.',
   },
   {
     question: 'What are your operating hours and timings in Nagarabhavi?',

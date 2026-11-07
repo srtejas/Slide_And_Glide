@@ -102,11 +102,11 @@ export const BLOG_POSTS: BlogPost[] = [
         content: 'Toddlers (ages 1–3) have very different physical capabilities and balance compared to energetic 8-year-olds. Ensure the venue has a dedicated, enclosed toddler play area so tiny tots are never accidentally bumped into by sprinting older children. Slide & Glide enforces clear zone demarcations for tranquil toddler discovery.',
       },
       {
-        heading: '3. Daily Hospital-Grade Cleaning & Multi-Cycle Sanitization',
-        content: 'Reputable indoor play arenas must be cleaned every day without compromise. Look for transparent hygiene protocols: thorough daily cleaning routines, hospital-grade disinfection of all climbing tunnels, slides, and vinyl mats, sanitized ball pits, and active climate control. Slide & Glide is rigorously cleaned every day and features contactless hand sanitizer stations throughout.',
+        heading: '3. Daily Child-Safe Cleaning & Multi-Cycle Sanitization',
+        content: 'Reputable indoor play arenas must be cleaned every day without compromise. Look for transparent hygiene protocols: thorough daily cleaning routines, child-safe disinfection of all climbing tunnels, slides, and vinyl mats, sanitized ball pits, and active climate control. Slide & Glide is rigorously cleaned every day and features contactless hand sanitizer stations throughout.',
         keyTakeaways: [
           'Entire play arena cleaned every day before opening',
-          'Child-safe, non-toxic hospital-grade sanitizers',
+          'Child-safe, non-toxic sanitizers',
           'Regular deep cleaning cycles for sensory ball pits'
         ]
       },
@@ -383,7 +383,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: '2. Signature Slides, Trampolines & Safe Sensory Glides',
-        content: 'At Slide & Glide, active play is in our name. Kids can climb through padded multi-tier adventure towers, race down spiral slides, glide safely across cushioned crawl tunnels, dive into thousands of hospital-grade sanitized colorful balls, and bounce to their hearts’ content on our safety-netted trampolines. Whether you are hosting 10 toddlers or 25 high-energy school friends, every child finds their favorite adventure zone.',
+        content: 'At Slide & Glide, active play is in our name. Kids can climb through padded multi-tier adventure towers, race down spiral slides, glide safely across cushioned crawl tunnels, dive into thousands of sanitized colorful balls, and bounce to their hearts’ content on our safety-netted trampolines. Whether you are hosting 10 toddlers or 25 high-energy school friends, every child finds their favorite adventure zone.',
         keyTakeaways: [
           'High-density EVA foam and rounded corner padding on all structures',
           'Dedicated low-impact toddler zone for younger sibling guests aged 1–3',
@@ -410,7 +410,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: '5. Daily Sanitization & 24/7 CCTV Monitored Peace of Mind',
-        content: 'Health and safety are never compromised. Our entire facility is deep-cleaned every morning and sanitized with child-safe, non-toxic hospital-grade disinfectants. Comprehensive 24/7 CCTV monitoring covers every square foot of the play equipment and party lounge, giving parents complete reassurance throughout the celebration.',
+        content: 'Health and safety are never compromised. Our entire facility is deep-cleaned every morning and sanitized with child-safe, non-toxic disinfectants. Comprehensive 24/7 CCTV monitoring covers every square foot of the play equipment and party lounge, giving parents complete reassurance throughout the celebration.',
       }
     ],
     faq: [
@@ -468,7 +468,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: '2. All Weather Comfort: Rain or Shine in Annapurneshwari Nagar',
-        content: 'Bangalore’s unpredictable weather—sudden monsoon showers or midday heat—frequently disrupts outdoor park outings. At Slide & Glide, your weekend plans are 100% weather-proof. Our facility is fully air-conditioned, brightly lit, and hospital-grade sanitized daily. Parents can unwind in our comfortable lounge with high-speed Wi-Fi, sip coffee, or read a book while keeping an uninterrupted eye on their playing toddlers.',
+        content: 'Bangalore’s unpredictable weather—sudden monsoon showers or midday heat—frequently disrupts outdoor park outings. At Slide & Glide, your weekend plans are 100% weather-proof. Our facility is fully air-conditioned, brightly lit, and cleaned and sanitized daily. Parents can unwind in our comfortable lounge with high-speed Wi-Fi, sip coffee, or read a book while keeping an uninterrupted eye on their playing toddlers.',
         keyTakeaways: [
           'Climate-controlled indoor environment protected from dust, rain, and pollution',
           'Parent lounge with direct visibility into every soft play zone',

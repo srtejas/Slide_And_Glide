@@ -31,7 +31,7 @@ export const WhyChooseUs: React.FC = () => {
             Why Choose Our Indoor Playground in Nagarabhavi?
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Rated Bangalore’s favorite destination for 100% screen-free fun, whole-child motor development, gentle <strong>toddler play area in Nagarabhavi</strong>, <strong>24/7 CCTV surveillance</strong>, and spotless <strong>daily cleaning &amp; hospital-grade sanitization</strong>.
+            Rated Bangalore’s favorite destination for 100% screen-free fun, whole-child motor development, gentle <strong>toddler play area in Nagarabhavi</strong>, <strong>24/7 CCTV surveillance</strong>, and spotless <strong>daily cleaning &amp; child-safe sanitization</strong>.
           </p>
         </div>
 

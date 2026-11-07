@@ -225,7 +225,7 @@ export const HeroAbout: React.FC = () => {
                 We founded <strong>Slide &amp; Glide</strong> to change that: a vibrant indoor arena where kids disconnect from screens and reconnect with pure joy—jumping high on trampolines, exploring multi-tiered slides, diving into sensory ball pits, and making lifelong friendships.
               </p>
               <p>
-                Every corner is crafted with a parent’s eye for safety: <strong>cleaned every day</strong> with hospital-grade sanitizers, continuous <strong>CCTV monitoring</strong> across all zones, rounded soft foam padding, and trained attendants.
+                Every corner is crafted with a parent’s eye for safety: <strong>cleaned every day</strong> with child-safe sanitizers, continuous <strong>CCTV monitoring</strong> across all zones, rounded soft foam padding, and trained attendants.
               </p>
             </div>
           )}
@@ -243,7 +243,7 @@ export const HeroAbout: React.FC = () => {
               <span className="text-base">✨</span>
               <div className="min-w-0">
                 <span className="text-xs font-bold text-slate-900 block truncate">Cleaned Every Day</span>
-                <span className="text-[10px] text-slate-500 block truncate">Sanitized hospital-grade</span>
+                <span className="text-[10px] text-slate-500 block truncate">Deep cleaned daily</span>
               </div>
             </div>
             <div className="bg-white rounded-xl p-2 border border-purple-100 flex items-center gap-2">

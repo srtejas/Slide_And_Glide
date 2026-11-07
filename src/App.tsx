@@ -9,7 +9,6 @@ import { GoogleLocationReviews } from './components/GoogleLocationReviews';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { BlogSection } from './components/BlogSection';
-import { PlaytimeToolsSection } from './components/PlaytimeToolsSection';
 import { BLOG_POSTS } from './data/blogData';
 
 export default function App() {
@@ -136,7 +135,6 @@ export default function App() {
           <ServicesAndParties />
           <WhyChooseUs />
           <PhotosSection />
-          <PlaytimeToolsSection />
           {/* Featured Blog Preview Section on Home Page */}
           <section id="blog" className="py-20 bg-slate-50 border-t border-b border-slate-200">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">

@@ -345,7 +345,7 @@ export const ServicesAndParties: React.FC = () => {
                 <div>
                   <h5 className="text-xs font-bold text-slate-900">CCTV &amp; Daily Cleaned</h5>
                   <p className="text-[11px] text-slate-600 mt-0.5">
-                    Continuous CCTV monitoring and deep hospital-grade cleaning every day for parents’ peace of mind.
+                    Continuous CCTV monitoring and deep sanitization cleaning every day for parents’ peace of mind.
                   </p>
                 </div>
               </div>

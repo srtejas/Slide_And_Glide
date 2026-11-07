@@ -14,7 +14,6 @@ export const Navbar: React.FC = () => {
     { label: 'Play Sessions', href: '#play-sessions' },
     { label: 'Pricing', href: '#pricing' },
     { label: 'Birthdays', href: '#birthdays' },
-    { label: 'Tools', href: '#tools' },
     { label: 'Photos', href: '#photos' },
     { label: 'Blog', href: '#blog' },
     { label: 'FAQ', href: '#faq' },
