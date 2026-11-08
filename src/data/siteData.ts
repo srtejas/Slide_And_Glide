@@ -37,6 +37,9 @@ export const CONTACT_INFO = {
   whatsappBirthdayUrl: 'https://wa.me/919538678201?text=Hi%20Slide%20%26%20Glide!%20I%20would%20like%20to%20inquire%20about%20booking%20a%20kids%20birthday%20party%20at%20your%20Nagarabhavi%20arena.',
   instagramUrl: 'https://www.instagram.com/slideandglideplayzone/',
   instagramHandle: '@slideandglideplayzone',
+  youtubeUrl: 'https://www.youtube.com/@Slide_Glide_Blr',
+  youtubeHandle: '@Slide_Glide_Blr',
+  justdialUrl: 'https://jsdl.in/DT-15NQ9K8DCSR',
   googleListingUrl: 'https://maps.app.goo.gl/zLi3pC3UZUMYc77M7?g_st=aw',
   googleReviewUrl: 'https://maps.app.goo.gl/zLi3pC3UZUMYc77M7?g_st=aw',
 };

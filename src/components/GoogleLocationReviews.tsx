@@ -139,6 +139,25 @@ export const GoogleLocationReviews: React.FC = () => {
                 </a>
 
                 <a
+                  href={CONTACT_INFO.justdialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs flex items-center justify-center gap-1.5 transition-colors min-h-[38px] shadow-2xs"
+                >
+                  <span className="px-1 py-0.5 rounded bg-black/10 text-[10px] font-black leading-none">JD</span>
+                  <span>View on Justdial</span>
+                </a>
+
+                <a
+                  href={CONTACT_INFO.youtubeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors min-h-[38px] shadow-2xs"
+                >
+                  <span>▶️ YouTube Channel</span>
+                </a>
+
+                <a
                   href={CONTACT_INFO.googleReviewUrl}
                   target="_blank"
                   rel="noopener noreferrer"

@@ -261,6 +261,26 @@ export const Navbar: React.FC = () => {
               <ExternalLink className="w-3.5 h-3.5" />
               <span>Google Maps Location &amp; Directions (Bangalore)</span>
             </a>
+
+            <div className="grid grid-cols-2 gap-2 pt-1 border-t border-slate-100">
+              <a
+                href={CONTACT_INFO.youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 text-center text-xs font-bold text-red-600 hover:bg-red-50 rounded-xl border border-red-200 flex items-center justify-center gap-1.5 min-h-[38px]"
+              >
+                <span>▶️ YouTube</span>
+              </a>
+              <a
+                href={CONTACT_INFO.justdialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 text-center text-xs font-black text-amber-700 hover:bg-amber-50 rounded-xl border border-amber-300 flex items-center justify-center gap-1.5 min-h-[38px]"
+              >
+                <span className="px-1 py-0.2 rounded bg-amber-200 text-amber-900 text-[9px] font-black leading-none">JD</span>
+                <span>Justdial</span>
+              </a>
+            </div>
           </div>
 
         </div>

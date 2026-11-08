@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle, Mail, Clock, Copy, Check, Instagram } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Clock, Copy, Check, Instagram, Youtube, ExternalLink } from 'lucide-react';
 import { CONTACT_INFO } from '../data/siteData';
 
 export const ContactSection: React.FC = () => {
@@ -154,6 +154,26 @@ export const ContactSection: React.FC = () => {
                 <Instagram className="w-3.5 h-3.5" />
                 <span>Instagram @slideandglideplayzone</span>
               </a>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={CONTACT_INFO.youtubeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2 px-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-2xs transition-colors min-h-[36px]"
+                >
+                  <Youtube className="w-3.5 h-3.5" />
+                  <span>YouTube</span>
+                </a>
+                <a
+                  href={CONTACT_INFO.justdialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2 px-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs flex items-center justify-center gap-1.5 shadow-2xs transition-colors min-h-[36px]"
+                >
+                  <span className="px-1 py-0.5 rounded bg-black/10 text-[10px] font-black leading-none">JD</span>
+                  <span>Justdial</span>
+                </a>
+              </div>
               <a
                 href={`mailto:${CONTACT_INFO.email}`}
                 className="w-full py-1.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-xs border border-slate-200 flex items-center justify-center gap-1.5 transition-colors"

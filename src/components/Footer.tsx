@@ -1,6 +1,6 @@
 import React from 'react';
 import { CONTACT_INFO, IMAGES } from '../data/siteData';
-import { Phone, Mail, MapPin, MessageCircle, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram, Youtube, ExternalLink } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -52,7 +52,27 @@ export const Footer: React.FC = () => {
               className="flex items-center gap-1.5 text-pink-400 hover:text-pink-300 transition-colors py-1"
             >
               <Instagram className="w-3.5 h-3.5 text-pink-400" />
-              <span>Instagram @slideandglideplayzone</span>
+              <span>Instagram</span>
+            </a>
+
+            <a
+              href={CONTACT_INFO.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-red-400 hover:text-red-300 transition-colors py-1"
+            >
+              <Youtube className="w-3.5 h-3.5 text-red-400" />
+              <span>YouTube</span>
+            </a>
+
+            <a
+              href={CONTACT_INFO.justdialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-amber-400 hover:text-amber-300 transition-colors py-1"
+            >
+              <span className="px-1 py-0.2 rounded bg-amber-500/20 text-amber-300 text-[10px] font-black leading-none">JD</span>
+              <span>Justdial</span>
             </a>
 
             <a
