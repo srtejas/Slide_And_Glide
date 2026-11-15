@@ -28,10 +28,10 @@ export const WhyChooseUs: React.FC = () => {
             <span>The Slide &amp; Glide Promise</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
-            Why Choose Our Indoor Playground in Nagarabhavi?
+            Why Choose Our Indoor Playground Nagarabhavi 2nd Stage &amp; Annapoorneshwari Nagar?
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Rated Bangalore’s favorite destination for 100% screen-free fun, whole-child motor development, gentle <strong>toddler play area in Nagarabhavi</strong>, <strong>24/7 CCTV surveillance</strong>, and spotless <strong>daily cleaning &amp; child-safe sanitization</strong>.
+            Rated the favorite <strong>childrens play zone West Bangalore</strong> families trust for 100% screen-free fun, creative <strong>roleplay games for toddlers</strong>, a welcoming <strong>kids play zone with café</strong> seating, <strong>24/7 CCTV surveillance</strong>, and spotless <strong>daily cleaning &amp; child-safe sanitization</strong>.
           </p>
         </div>
 

@@ -27,20 +27,20 @@ export const HeroAbout: React.FC = () => {
           <div className="flex items-center justify-center gap-1.5 mb-2">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-100/90 border border-violet-200 text-violet-800 text-xs font-bold">
               <Sparkles className="w-3.5 h-3.5 text-violet-600" />
-              <span>Indoor Kids Play Area in Nagarabhavi, Bangalore</span>
+              <span>Indoor Playground Nagarabhavi 2nd Stage • West Bangalore</span>
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight font-['Fredoka',sans-serif]">
-            Slide <span className="text-violet-600">&amp;</span> Glide
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 tracking-tight font-['Fredoka',sans-serif] leading-tight max-w-3xl mx-auto">
+            <span className="text-violet-600">Slide &amp; Glide</span> | The Premier Kids Play Area &amp; Birthday Party Venue in Nagarbhavi
           </h1>
           
-          <p className="mt-1 text-base sm:text-xl font-black text-violet-600 uppercase tracking-wide font-['Fredoka',sans-serif]">
+          <p className="mt-2 text-sm sm:text-lg font-black text-violet-600 uppercase tracking-wide font-['Fredoka',sans-serif]">
             Jump, Play &amp; Celebrate!
           </p>
 
           <p className="mt-1 text-xs sm:text-sm font-bold text-slate-700">
-            Indoor Playground &amp; Birthday Party Venue in Nagarabhavi • Clean, Safe &amp; Screen-Free
+            Childrens Play Zone West Bangalore • Kids Play Zone with Café • Roleplay Games for Toddlers
           </p>
 
           {/* Age Demarcation & Pricing Callout */}
@@ -49,17 +49,17 @@ export const HeroAbout: React.FC = () => {
               👶 Ages 1–10 Years (Dedicated 1–3 Yrs Toddler Zone)
             </span>
             <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold border border-emerald-200">
-              🏷️ Play Sessions Start from 249 Onwards
+              🏷️ Indoor Play Area Package Rates Start from ₹249 Onwards
             </span>
           </div>
 
           {/* About Context - Parent-first, authentic & transparent copy */}
           <div className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto space-y-2">
             <p>
-              Welcome to <strong>Slide &amp; Glide</strong> — Nagarabhavi’s family-favorite indoor play arena, created for children to jump, explore, and celebrate in a safe, <strong>24/7 CCTV monitored</strong>, and <strong>cleaned every day</strong> environment.
+              Welcome to <strong>Slide &amp; Glide</strong> — the trusted <strong>indoor playground Nagarabhavi 2nd stage</strong> and <strong>childrens play zone West Bangalore</strong> families love, built for children to jump, explore, and celebrate in a safe, <strong>24/7 CCTV monitored</strong>, and <strong>cleaned every day</strong> arena.
             </p>
             <p className="text-xs sm:text-sm text-slate-500">
-              Our entire arena is built for children aged <strong>1–10 years</strong>, featuring a dedicated safe soft play foam zone for toddlers (<strong>ages 1–3</strong>). On weekdays, kids love enjoying our joyful <strong>slides and swings along with the multi-level obstacle area</strong>, trampolines, and ball pits!
+              Designed for kids aged <strong>1–10 years</strong>, our <strong>kids play zone with café</strong> &amp; parent lounge features creative <strong>roleplay games for toddlers</strong> (ages 1–3), colorful <strong>slides and swings along with a multi-level obstacle area</strong>, trampolines, and customizable <strong>birthday party halls near Annapoorneshwari Nagar</strong>!
             </p>
           </div>
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroAbout } from './components/HeroAbout';
 import { ServicesAndParties } from './components/ServicesAndParties';
+import { PartiesSection } from './components/PartiesSection';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { PhotosSection } from './components/PhotosSection';
 import { FaqSection } from './components/FaqSection';
@@ -64,12 +65,12 @@ export default function App() {
         );
       }
     } else {
-      document.title = 'Indoor Kids Play Area in Nagarabhavi | Slide & Glide';
+      document.title = 'Slide & Glide | The Premier Kids Play Area & Birthday Party Venue in Nagarbhavi';
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
         metaDesc.setAttribute(
           'content',
-          'Visit Slide & Glide, an indoor kids play area and birthday party venue in Nagarabhavi, Bengaluru. Play sessions starting from 249 onwards. CCTV monitored and cleaned every day.'
+          'Looking for a premium birthday party hall near Nagarbhavi or childrens play zone in West Bangalore? Slide & Glide offers indoor playground Nagarabhavi 2nd stage sessions from ₹249, roleplay games for toddlers, kids play zone with café, and customizable small event venue with catering packages.'
         );
       }
     }
@@ -126,13 +127,14 @@ export default function App() {
             onNavigateHome={navigateToHome}
             onSelectPost={(slug) => navigateToBlog(slug)}
             onOpenPricing={() => scrollToSection('pricing')}
-            onOpenBirthdays={() => scrollToSection('birthdays')}
+            onOpenBirthdays={() => scrollToSection('parties')}
           />
         </main>
       ) : (
         <main>
           <HeroAbout />
           <ServicesAndParties />
+          <PartiesSection />
           <WhyChooseUs />
           <PhotosSection />
           {/* Featured Blog Preview Section on Home Page */}

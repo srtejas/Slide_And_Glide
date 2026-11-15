@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
     { label: 'About', href: '#about' },
     { label: 'Play Sessions', href: '#play-sessions' },
     { label: 'Pricing', href: '#pricing' },
-    { label: 'Birthdays', href: '#birthdays' },
+    { label: 'Parties', href: '#parties' },
     { label: 'Photos', href: '#photos' },
     { label: 'Blog', href: '#blog' },
     { label: 'FAQ', href: '#faq' },

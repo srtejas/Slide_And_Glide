@@ -144,19 +144,21 @@ export const Footer: React.FC = () => {
 
         {/* SEO Tagline / Keyword summary */}
         <div className="py-4 border-b border-slate-800 text-[11px] text-slate-400 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-center">
-          <span>Indoor Kids Play Area in Nagarabhavi</span>
+          <span>Kids Birthday Party Venue Nagarbhavi</span>
           <span>•</span>
-          <span>Kids Play Area Near Me</span>
+          <span>Birthday Party Halls Near Annapoorneshwari Nagar</span>
           <span>•</span>
-          <span>Kids Birthday Party Venue in Nagarabhavi</span>
+          <span>Small Event Venue with Catering</span>
           <span>•</span>
-          <span>Birthday Party Packages for Kids</span>
+          <span>Kids Play Zone with Café</span>
           <span>•</span>
-          <span>Soft Play Area for Kids</span>
+          <span>Indoor Play Area Package Rates</span>
           <span>•</span>
-          <span>Toddler Play Area in Nagarabhavi</span>
+          <span>Roleplay Games for Toddlers</span>
           <span>•</span>
-          <span>Weekend Activities for Kids in Bangalore</span>
+          <span>Indoor Playground Nagarabhavi 2nd Stage</span>
+          <span>•</span>
+          <span>Childrens Play Zone West Bangalore</span>
         </div>
 
         {/* Bottom copyright & address */}
