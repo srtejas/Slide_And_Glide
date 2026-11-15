@@ -116,7 +116,7 @@ Phone: ${formData.phone}`;
           </div>
           <div>
             <h4 className="text-lg font-bold text-slate-900 font-['Fredoka',sans-serif]">
-              Enquiry Prepared for slide.glide.0926@gmail.com!
+              Enquiry prepared
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto mt-1">
               Your default email application has opened with the formatted party enquiry. If you didn't see the email prompt, you can click below to send it or message us on WhatsApp for an instant response.
