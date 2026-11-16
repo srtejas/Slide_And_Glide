@@ -4,11 +4,9 @@ import { Phone, Mail, MapPin, MessageCircle, Instagram, Youtube, ExternalLink } 
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-900 text-slate-300 py-10 text-xs">
+    <footer className="bg-slate-900 text-slate-300 pt-10 pb-24 text-xs">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
-          
           {/* Brand with Mascot Logo */}
           <div className="flex items-center gap-3">
             <img
@@ -27,22 +25,32 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Quick Contact Links */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold">
+          {/* Quick Contact & Social Links — All Ready to Click */}
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-semibold">
             <a
               href={`tel:${CONTACT_INFO.primaryPhoneRaw}`}
-              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
+              className="flex items-center gap-1.5 text-white hover:text-amber-300 transition-colors py-1"
             >
               <Phone className="w-3.5 h-3.5 text-violet-400" />
-              <span>Call Primary ({CONTACT_INFO.primaryPhone})</span>
+              <span>{CONTACT_INFO.primaryPhone}</span>
             </a>
 
             <a
-              href={`mailto:${CONTACT_INFO.email}`}
+              href={`tel:${CONTACT_INFO.secondaryPhoneRaw}`}
               className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
-              <Mail className="w-3.5 h-3.5 text-violet-400" />
-              <span>Email Us</span>
+              <Phone className="w-3.5 h-3.5 text-slate-400" />
+              <span>{CONTACT_INFO.secondaryPhone}</span>
+            </a>
+
+            <a
+              href={CONTACT_INFO.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition-colors py-1"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              <span>WhatsApp</span>
             </a>
 
             <a
@@ -71,7 +79,9 @@ export const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-amber-400 hover:text-amber-300 transition-colors py-1"
             >
-              <span className="px-1 py-0.2 rounded bg-amber-500/20 text-amber-300 text-[10px] font-black leading-none">JD</span>
+              <span className="px-1 py-0.2 rounded bg-amber-500/20 text-amber-300 text-[10px] font-black leading-none">
+                JD
+              </span>
               <span>Justdial</span>
             </a>
 
@@ -79,10 +89,18 @@ export const Footer: React.FC = () => {
               href={CONTACT_INFO.googleListingUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-rose-300 hover:text-rose-200 transition-colors py-1"
+            >
+              <MapPin className="w-3.5 h-3.5 text-rose-400" />
+              <span>Location (Google Maps)</span>
+            </a>
+
+            <a
+              href={`mailto:${CONTACT_INFO.email}`}
               className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors py-1"
             >
-              <MapPin className="w-3.5 h-3.5 text-violet-400" />
-              <span>Google Maps</span>
+              <Mail className="w-3.5 h-3.5 text-violet-400" />
+              <span>Email Us</span>
             </a>
 
             <a
@@ -92,7 +110,6 @@ export const Footer: React.FC = () => {
               <span>Play &amp; Parenting Blog</span>
             </a>
           </div>
-
         </div>
 
         {/* Blog Post Quick Navigation */}
@@ -164,7 +181,15 @@ export const Footer: React.FC = () => {
         {/* Bottom copyright & address */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
           <div className="text-center sm:text-left space-y-0.5">
-            <p className="text-slate-400 font-medium">{CONTACT_INFO.address}</p>
+            <a
+              href={CONTACT_INFO.googleListingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-300 hover:text-amber-300 font-medium inline-flex items-center gap-1 transition-colors"
+            >
+              <MapPin className="w-3.5 h-3.5 text-rose-400 shrink-0" />
+              <span>{CONTACT_INFO.address}</span>
+            </a>
             <p>© {new Date().getFullYear()} Slide &amp; Glide. All rights reserved.</p>
           </div>
           <a

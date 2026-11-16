@@ -9,6 +9,7 @@ import { FaqSection } from './components/FaqSection';
 import { GoogleLocationReviews } from './components/GoogleLocationReviews';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { StickyQuickBar } from './components/StickyQuickBar';
 import { BlogSection } from './components/BlogSection';
 import { BLOG_POSTS } from './data/blogData';
 
@@ -208,6 +209,7 @@ export default function App() {
       )}
 
       <Footer />
+      <StickyQuickBar />
     </div>
   );
 }
