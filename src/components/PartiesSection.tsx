@@ -9,13 +9,13 @@ import {
   Coffee,
   Clock,
   CheckCircle2,
-  MessageCircle,
   Phone,
   Sparkles,
   MapPin,
 } from 'lucide-react';
 import { BIRTHDAY_PACKAGES, BIRTHDAY_PERKS, CONTACT_INFO, IMAGES } from '../data/siteData';
 import { PartyEnquiryForm } from './PartyEnquiryForm';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const PartiesSection: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ export const PartiesSection: React.FC = () => {
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight leading-tight">
-            Birthday Party Venue &amp; Small Event Hall in Nagarabhavi
+            Birthday Party Venue &amp; Event Hall in Nagarabhavi
           </h2>
 
           <p className="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed max-w-2xl mx-auto font-medium">
@@ -44,7 +44,7 @@ export const PartiesSection: React.FC = () => {
           </p>
 
           <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Conveniently located for families searching for <strong>birthday party halls near Annapoorneshwari Nagar</strong> or a cheerful <strong>small event venue with catering</strong> support in West Bangalore — featuring our <strong>kids play zone with café</strong> refreshments, decorated cake space, and stress-free party hosting.
+            Conveniently located for families searching for <strong>birthday party halls near Annapoorneshwari Nagar</strong> or a cheerful <strong>event venue with catering</strong> support in West Bangalore — featuring our <strong>kids play zone with café</strong> refreshments, decorated cake space, and stress-free party hosting.
           </p>
         </div>
 
@@ -59,11 +59,11 @@ export const PartiesSection: React.FC = () => {
               </div>
 
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
-                Stress-Free Birthdays &amp; Small Events with Catering Support
+                Stress-Free Birthdays &amp; Events with Catering Support
               </h3>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Say goodbye to cramped living rooms and noisy restaurants! As a dedicated <strong>kids birthday party venue Nagarbhavi</strong> families trust, we handle play supervision, festive balloon setup, cake table arrangement, and <strong>small event venue with catering</strong> &amp; snack-serving coordination so parents can genuinely relax.
+                Say goodbye to cramped living rooms and noisy restaurants! As a dedicated <strong>kids birthday party venue Nagarbhavi</strong> families trust, we handle play supervision, festive balloon setup, cake table arrangement, and <strong>event venue with catering</strong> &amp; snack-serving coordination so parents can genuinely relax.
               </p>
 
               {/* Highlights Grid */}
@@ -106,7 +106,7 @@ export const PartiesSection: React.FC = () => {
                   rel="noopener noreferrer"
                   className="px-4 py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center gap-1.5 shadow-xs transition-colors"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" />
+                  <WhatsAppIcon className="w-3.5 h-3.5" />
                   <span>Inquire Birthday on WhatsApp</span>
                 </a>
                 <a
@@ -176,7 +176,7 @@ export const PartiesSection: React.FC = () => {
               Customizable Kids Birthday Party Packages (Ages 1–10 Years)
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Ideal for intimate toddler birthdays, school friend celebrations, and small family events with catering in West Bangalore.
+              Ideal for intimate toddler birthdays, school friend celebrations, and family events with catering in West Bangalore.
             </p>
           </div>
 
@@ -239,7 +239,7 @@ export const PartiesSection: React.FC = () => {
                         : 'bg-slate-100 hover:bg-slate-200 text-slate-800'
                     }`}
                   >
-                    <MessageCircle className="w-3.5 h-3.5" />
+                    <WhatsAppIcon className="w-3.5 h-3.5" />
                     <span>Enquire on WhatsApp</span>
                   </a>
                 </div>
@@ -286,7 +286,7 @@ export const PartiesSection: React.FC = () => {
               rel="noopener noreferrer"
               className="px-3.5 py-2 rounded-xl bg-emerald-500 text-white font-extrabold text-xs flex items-center gap-1.5 hover:bg-emerald-600 transition-colors"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <WhatsAppIcon className="w-3.5 h-3.5" />
               <span>WhatsApp Us</span>
             </a>
           </div>

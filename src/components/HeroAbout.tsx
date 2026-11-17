@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { MessageCircle, Phone, MapPin, Heart, Sparkles, ChevronDown, ChevronUp, Users, Brain, Activity } from 'lucide-react';
+import { Phone, MapPin, Heart, Sparkles, ChevronDown, ChevronUp, Users, Brain, Activity } from 'lucide-react';
 import { IMAGES, CONTACT_INFO } from '../data/siteData';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const HeroAbout: React.FC = () => {
   const [showFullStory, setShowFullStory] = useState(false);
@@ -139,7 +140,7 @@ export const HeroAbout: React.FC = () => {
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 via-purple-600 to-pink-500 hover:from-violet-700 hover:to-pink-600 text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md transition-all min-h-[40px]"
             >
-              <MessageCircle className="w-4 h-4" />
+              <WhatsAppIcon className="w-4 h-4" />
               <span>WhatsApp Us</span>
             </a>
 

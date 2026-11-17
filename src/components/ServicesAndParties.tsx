@@ -9,11 +9,12 @@ import {
   Gamepad2,
   CheckCircle2,
   Phone,
-  MessageCircle,
   Tag,
   Coffee,
+  Award,
 } from 'lucide-react';
 import { SERVICES_LIST, PLAY_PRICING_PLANS, CONTACT_INFO } from '../data/siteData';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const ServicesAndParties: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'play' | 'pricing'>('play');
@@ -318,12 +319,41 @@ export const ServicesAndParties: React.FC = () => {
                           : 'bg-slate-100 hover:bg-slate-200 text-slate-800'
                       }`}
                     >
-                      <MessageCircle className="w-3.5 h-3.5" />
+                      <WhatsAppIcon className="w-3.5 h-3.5" />
                       <span>Inquire on WhatsApp</span>
                     </a>
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Discounted Family & Child Membership Plans Callout */}
+            <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-50 via-violet-50 to-pink-50 border border-violet-200 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-2xs">
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-xl bg-violet-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                  <Award className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="inline-block text-[10px] font-black uppercase tracking-wider text-violet-700 bg-white px-2 py-0.5 rounded-md border border-violet-200 mb-1">
+                    Save More on Every Visit
+                  </span>
+                  <h4 className="text-sm sm:text-base font-black text-slate-900 font-['Fredoka',sans-serif]">
+                    Membership Plans for Frequently Visiting Children &amp; Families
+                  </h4>
+                  <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                    Visit often? We offer flexible <strong>membership plans for frequently visiting kids and families at highly discounted rates</strong>. Ask at our reception counter or message us on WhatsApp for membership options!
+                  </p>
+                </div>
+              </div>
+              <a
+                href={CONTACT_INFO.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs flex items-center gap-1.5 shrink-0 shadow-xs transition-colors"
+              >
+                <WhatsAppIcon className="w-3.5 h-3.5" />
+                <span>Ask About Memberships</span>
+              </a>
             </div>
 
             {/* Transparent Policies Strip */}
@@ -393,7 +423,7 @@ export const ServicesAndParties: React.FC = () => {
                   rel="noopener noreferrer"
                   className="px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs flex items-center gap-1.5 transition-colors"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" />
+                  <WhatsAppIcon className="w-3.5 h-3.5" />
                   <span>WhatsApp</span>
                 </a>
               </div>

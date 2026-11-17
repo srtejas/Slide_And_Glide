@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { HelpCircle, ChevronDown, ChevronUp, Sparkles, MessageCircle, Phone } from 'lucide-react';
+import { HelpCircle, ChevronDown, Phone } from 'lucide-react';
 import { SEO_FAQ_ITEMS, CONTACT_INFO } from '../data/siteData';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const FaqSection: React.FC = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
@@ -81,7 +82,7 @@ export const FaqSection: React.FC = () => {
               rel="noopener noreferrer"
               className="px-3.5 py-2 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-extrabold text-xs flex items-center gap-1.5 transition-colors"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <WhatsAppIcon className="w-3.5 h-3.5" />
               <span>Ask on WhatsApp</span>
             </a>
             <a

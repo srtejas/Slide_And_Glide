@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import {
   Phone,
-  MessageCircle,
   Menu,
   X,
   Copy,
@@ -12,6 +11,7 @@ import {
   Youtube,
 } from 'lucide-react';
 import { CONTACT_INFO, IMAGES } from '../data/siteData';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,6 +28,7 @@ export const Navbar: React.FC = () => {
     { label: 'Blog', href: '#blog' },
     { label: 'FAQ', href: '#faq' },
     { label: 'Location', href: '#location' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   useEffect(() => {
@@ -94,7 +95,7 @@ export const Navbar: React.FC = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200 font-bold transition-colors"
             >
-              <MessageCircle className="w-3 h-3" />
+              <WhatsAppIcon variant="official" className="w-3.5 h-3.5" />
               <span>WhatsApp</span>
             </a>
             <a
@@ -254,7 +255,7 @@ export const Navbar: React.FC = () => {
             rel="noopener noreferrer"
             className="text-xs font-extrabold text-white bg-gradient-to-r from-violet-600 via-purple-600 to-pink-500 hover:from-violet-700 hover:via-purple-700 hover:to-pink-600 py-2 px-3.5 rounded-xl flex items-center gap-1.5 shadow-md shadow-violet-200 hover:shadow-lg transition-all"
           >
-            <MessageCircle className="w-3.5 h-3.5" />
+            <WhatsAppIcon className="w-3.5 h-3.5" />
             <span>WhatsApp</span>
           </a>
         </div>
@@ -309,9 +310,9 @@ export const Navbar: React.FC = () => {
             rel="noopener noreferrer"
             aria-label="WhatsApp"
             title="WhatsApp"
-            className="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center active:scale-95 transition-transform"
+            className="w-8 h-8 rounded-full bg-white border border-emerald-200 flex items-center justify-center active:scale-95 transition-transform shadow-2xs"
           >
-            <MessageCircle className="w-4 h-4" />
+            <WhatsAppIcon variant="official" className="w-6 h-6" />
           </a>
 
           <button
@@ -401,7 +402,7 @@ export const Navbar: React.FC = () => {
               rel="noopener noreferrer"
               className="w-full py-2.5 text-center text-xs font-extrabold text-white bg-gradient-to-r from-violet-600 via-purple-600 to-pink-500 rounded-xl flex items-center justify-center gap-2 shadow-sm min-h-[42px]"
             >
-              <MessageCircle className="w-4 h-4" />
+              <WhatsAppIcon className="w-4 h-4" />
               <span>WhatsApp Us Directly</span>
             </a>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { CONTACT_INFO, IMAGES } from '../data/siteData';
-import { Phone, Mail, MapPin, MessageCircle, Instagram, Youtube, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Youtube } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const Footer: React.FC = () => {
   return (
@@ -49,7 +50,7 @@ export const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition-colors py-1"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <WhatsAppIcon variant="official" className="w-4 h-4" />
               <span>WhatsApp</span>
             </a>
 
@@ -165,7 +166,7 @@ export const Footer: React.FC = () => {
           <span>•</span>
           <span>Birthday Party Halls Near Annapoorneshwari Nagar</span>
           <span>•</span>
-          <span>Small Event Venue with Catering</span>
+          <span>Event Venue with Catering</span>
           <span>•</span>
           <span>Kids Play Zone with Café</span>
           <span>•</span>
@@ -198,7 +199,7 @@ export const Footer: React.FC = () => {
             rel="noopener noreferrer"
             className="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1 py-1"
           >
-            <MessageCircle className="w-3.5 h-3.5" />
+            <WhatsAppIcon variant="official" className="w-4 h-4" />
             <span>WhatsApp Us</span>
           </a>
         </div>

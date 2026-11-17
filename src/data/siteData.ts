@@ -277,11 +277,11 @@ export const SERVICES_LIST = [
   },
   {
     id: 'weekday-activities',
-    title: 'Affordable Indoor Play Area Package Rates',
+    title: 'Affordable Indoor Play Area Package Rates & Memberships',
     tag: 'Open Daily • 11 AM - 9 PM',
-    desc: 'Looking for clear indoor play area package rates in Nagarabhavi 2nd Stage & Annapoorneshwari Nagar? Walk in weekdays or weekends for slides, swings, obstacle courses, role-play town, and jump zones starting from ₹249 onwards.',
+    desc: 'Looking for clear indoor play area package rates in Nagarabhavi 2nd Stage & Annapoorneshwari Nagar? Walk in from ₹249 onwards, or choose our membership plans for frequently visiting children and families at highly discounted rates.',
     icon: 'Clock',
-    badge: 'From ₹249 onwards',
+    badge: 'From ₹249 + Memberships',
   },
 ];
 
@@ -336,9 +336,9 @@ export const PLAY_PRICING_PLANS = [
       'Role-play town, pretend grocery supermarket & merry-go-round',
       'Gravity-defying trampoline jumps and dive-in ball pit',
       'Comfortable parent café seating & refreshment corner nearby',
-      'Socks mandatory for clean, hygienic play environment',
+      'Membership plans available for frequently visiting kids & families at highly discounted rates',
     ],
-    highlight: 'Starts from 249 onwards • Top childrens play zone West Bangalore',
+    highlight: 'Starts from 249 onwards • Ask about discounted family membership plans',
     badge: 'Most Popular',
   },
 ];
@@ -372,7 +372,7 @@ export const BIRTHDAY_PACKAGES = [
       'Full access to all zones: Toddler Zone (1–3 yrs), Trampolines, Slides & Obstacles',
       'Reserved party hall seating with decorated cake table & photo corner',
       'Dedicated party coordinator & fun interactive games assistance',
-      'Small event venue with catering & customizable food serving zone',
+      'Event venue with catering & customizable food serving zone',
       'Complimentary pair of socks for the birthday child & special guest rate',
       'Digital invitation templates to share with friends & family',
     ],
@@ -388,9 +388,9 @@ export const BIRTHDAY_PACKAGES = [
     features: [
       '100% private, exclusive access to the complete indoor arena',
       'Entire childrens play zone reserved only for your invited guests',
-      'Full small event venue with catering setup, dining area & café counter',
+      'Full event venue with catering setup, dining area & café counter',
       'Customized music playlist & personalized celebration timeline',
-      'Full team of trained safety marshals & dedicated hospitality staff',
+      'Attentive play staff & dedicated hospitality team',
     ],
     highlight: 'VIP private birthday party venue in Nagarabhavi with complete freedom',
     badge: 'VIP Exclusive',
@@ -399,7 +399,7 @@ export const BIRTHDAY_PACKAGES = [
 
 export const BIRTHDAY_PERKS = [
   { title: '100% Screen-Free Fun', desc: 'Active physical play on safe slides, trampolines & ball pits' },
-  { title: 'Catering & Café Zone', desc: 'Flexible small event venue with catering & snack serving space' },
+  { title: 'Catering & Café Zone', desc: 'Flexible event venue with catering & snack serving space' },
   { title: 'Zero Stress for Parents', desc: 'Our team assists with setup and coordination so you relax' },
   { title: 'Prime Nagarabhavi Spot', desc: 'Near Annapoorneshwari Nagar & Nagarabhavi 2nd Stage with parking' },
 ];
@@ -415,12 +415,12 @@ export const SEO_FAQ_ITEMS = [
     answer: 'Our entire indoor playground is designed for children aged 1–10 years, featuring a dedicated soft play foam zone and roleplay games for toddlers (ages 1–3 years) including pretend market stalls, magnetic lego boards, and gentle mini slides.',
   },
   {
-    question: 'What are the indoor play area package rates for walk-in sessions?',
-    answer: 'Indoor play area package rates at Slide & Glide start from ₹249 onwards for walk-in entries. Every child pass includes full zone access, free entry for 1 accompanying adult guardian, and seating in our kids play zone with café lounge and free Wi-Fi.',
+    question: 'What are the indoor play area package rates? Do you offer membership plans?',
+    answer: 'Indoor play area package rates at Slide & Glide start from ₹249 onwards for walk-in entries, including free entry for 1 accompanying parent and access to our kids play zone with café lounge. We also offer flexible membership plans for frequently visiting children and families at highly discounted rates!',
   },
   {
     question: 'Do you offer birthday party halls near Annapoorneshwari Nagar with catering options?',
-    answer: 'Yes! Looking for a premium birthday party hall near Nagarbhavi or birthday party halls near Annapoorneshwari Nagar? Slide & Glide offers customizable, hassle-free birthday party packages for kids up to 10 years old, and works as a small event venue with catering and refreshment serving support. Call +91 97397 80837 or message us on WhatsApp to plan your event.',
+    answer: 'Yes! Looking for a premium birthday party hall near Nagarbhavi or birthday party halls near Annapoorneshwari Nagar? Slide & Glide offers customizable, hassle-free birthday party packages for kids up to 10 years old, and works as an event venue with catering and refreshment serving support. Call +91 97397 80837 or message us on WhatsApp to plan your event.',
   },
   {
     question: 'Is Slide & Glide a kids play zone with café and parent seating?',

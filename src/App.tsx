@@ -10,6 +10,7 @@ import { GoogleLocationReviews } from './components/GoogleLocationReviews';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { StickyQuickBar } from './components/StickyQuickBar';
+import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { BlogSection } from './components/BlogSection';
 import { BLOG_POSTS } from './data/blogData';
 
@@ -71,7 +72,7 @@ export default function App() {
       if (metaDesc) {
         metaDesc.setAttribute(
           'content',
-          'Looking for a premium birthday party hall near Nagarbhavi or childrens play zone in West Bangalore? Slide & Glide offers indoor playground Nagarabhavi 2nd stage sessions from ₹249, roleplay games for toddlers, kids play zone with café, and customizable small event venue with catering packages.'
+          'Looking for a premium birthday party hall near Nagarbhavi or childrens play zone in West Bangalore? Slide & Glide offers indoor playground Nagarabhavi 2nd stage sessions from ₹249, discounted membership plans, roleplay games for toddlers, kids play zone with café, and customizable event venue with catering packages.'
         );
       }
     }
@@ -209,6 +210,7 @@ export default function App() {
       )}
 
       <Footer />
+      <ScrollToTopButton />
       <StickyQuickBar />
     </div>
   );

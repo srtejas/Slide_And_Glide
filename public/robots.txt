@@ -2,10 +2,10 @@
 # Robots.txt for Slide & Glide Indoor Kids Play Area & Birthday Party Venue
 # Location: Annapoorneshwari Nagar, Nagarabhavi 2nd Stage, West Bangalore 560091
 # Keywords: kids birthday party venue Nagarbhavi, birthday party halls near
-#           Annapoorneshwari Nagar, small event venue with catering, kids play
-#           zone with cafe, indoor play area package rates, roleplay games for
-#           toddlers, indoor playground Nagarabhavi 2nd stage, childrens play
-#           zone West Bangalore, slide, glide, kids play area near me
+#           Annapoorneshwari Nagar, event venue with catering, kids play
+#           zone with cafe, indoor play area package rates, membership plans,
+#           roleplay games for toddlers, indoor playground Nagarabhavi 2nd stage,
+#           childrens play zone West Bangalore, slide, glide, kids play area near me
 # ==============================================================================
 
 User-agent: *

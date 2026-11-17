@@ -1,6 +1,7 @@
 import React from 'react';
-import { Phone, MapPin, MessageCircle, Instagram, Youtube, CalendarCheck } from 'lucide-react';
+import { Phone, MapPin, Instagram, Youtube, CalendarCheck } from 'lucide-react';
 import { CONTACT_INFO } from '../data/siteData';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const StickyQuickBar: React.FC = () => {
   return (
@@ -49,8 +50,8 @@ export const StickyQuickBar: React.FC = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 py-2 px-1 text-white hover:bg-white/15 active:bg-white/20 transition-colors"
             title="Chat on WhatsApp"
           >
-            <span className="w-7 h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center shadow-2xs shrink-0">
-              <MessageCircle className="w-4 h-4" />
+            <span className="w-7 h-7 rounded-lg bg-white flex items-center justify-center shadow-2xs shrink-0">
+              <WhatsAppIcon variant="official" className="w-5 h-5" />
             </span>
             <span className="text-[10px] sm:text-xs font-bold leading-tight text-center">
               WhatsApp

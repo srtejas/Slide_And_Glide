@@ -11,7 +11,6 @@ import {
   CheckCircle2,
   Tag,
   Phone,
-  MessageCircle,
   HelpCircle,
   Search,
   BookOpen,
@@ -19,6 +18,7 @@ import {
   MapPin,
   Check
 } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 interface BlogProps {
   currentSlug?: string | null;
@@ -568,7 +568,7 @@ export const BlogSection: React.FC<BlogProps> = ({
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-colors shadow-xs"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <WhatsAppIcon className="w-3.5 h-3.5" />
               WhatsApp Us
             </a>
             <button

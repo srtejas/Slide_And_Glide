@@ -116,8 +116,8 @@ export const BLOG_POSTS: BlogPost[] = [
         ]
       },
       {
-        heading: '4. 24/7 CCTV Monitoring & Attentive Floor Marshals',
-        content: 'Continuous CCTV video surveillance gives parents unmatched peace of mind. Combined with vigilant on-ground play marshals, comprehensive camera monitoring ensures that rough play is immediately addressed and every child plays safely within their view at all times.',
+        heading: '4. 24/7 CCTV Monitoring & Attentive Floor Staff',
+        content: 'Continuous CCTV video surveillance gives parents unmatched peace of mind. Combined with vigilant on-ground play attendants, comprehensive camera monitoring ensures that rough play is immediately addressed and every child plays safely within view at all times.',
         keyTakeaways: [
           'Full-facility 24/7 CCTV camera coverage',
           'Attentive attendants keeping play friendly and secure'
@@ -338,7 +338,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: '4. Dedicated Parental Visibility & Relaxing Lounge',
-        content: 'At a large outdoor park, tracking energetic children across vast un-fenced open grounds can be stressful. Indoor arenas feature secure, single-entry-and-exit access, trained marshals, and parent lounges with panoramic visibility, giving parents a well-deserved breather.',
+        content: 'At a large outdoor park, tracking energetic children across vast un-fenced open grounds can be stressful. Indoor arenas feature secure, single-entry-and-exit access, attentive floor staff, and parent lounges with panoramic visibility, giving parents a well-deserved breather.',
       }
     ],
     faq: [
@@ -379,7 +379,7 @@ export const BLOG_POSTS: BlogPost[] = [
     sections: [
       {
         heading: '1. Why Do Birthdays Here? 100% Stress-Free for Parents, 100% Fun for Kids',
-        content: 'When you book a birthday celebration at Slide & Glide in Nagarbhavi, you trade exhaustion for pure joy. Our dedicated event marshals handle the setup, music playlists, cake table coordination, and crowd guidance. Parents don’t need to worry about entertaining energetic kids—our multi-level slides, thrilling glide tunnels, gravity-defying trampolines, and giant ball pits keep children actively engaged from the very first minute.',
+        content: 'When you book a birthday celebration at Slide & Glide in Nagarbhavi, you trade exhaustion for pure joy. Our dedicated event coordinators handle the setup, music playlists, cake table coordination, and guest guidance. Parents don’t need to worry about entertaining energetic kids—our multi-level slides, thrilling glide tunnels, gravity-defying trampolines, and giant ball pits keep children actively engaged from the very first minute.',
         keyTakeaways: [
           'Dedicated party host and event attendants manage party flow and play safety',
           'No house prep, no post-party vacuuming, and no kitchen chaos',

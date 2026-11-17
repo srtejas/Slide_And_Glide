@@ -10,11 +10,11 @@ import {
   Brain, 
   Users, 
   Heart,
-  MessageCircle,
   Phone,
   Video
 } from 'lucide-react';
 import { DEVELOPMENT_PILLARS, HYGIENE_STANDARDS, CONTACT_INFO } from '../data/siteData';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const WhyChooseUs: React.FC = () => {
   return (
@@ -170,7 +170,7 @@ export const WhyChooseUs: React.FC = () => {
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-violet-500 to-pink-500 hover:from-violet-600 hover:to-pink-600 text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-1.5 shadow-sm transition-all"
               >
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span>WhatsApp Inquiries</span>
               </a>
 

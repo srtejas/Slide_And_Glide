@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Sparkles, Calendar, Users, Phone, Mail, CheckCircle2, MessageCircle, PartyPopper, Clock, Heart, Send } from 'lucide-react';
+import { Calendar, Users, Phone, Mail, CheckCircle2, PartyPopper, Clock, Heart, Send } from 'lucide-react';
 import { CONTACT_INFO } from '../data/siteData';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const PartyEnquiryForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -86,13 +87,13 @@ Phone: ${formData.phone}`;
       <div className="text-center max-w-2xl mx-auto mb-6">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-100 text-pink-900 text-xs font-bold border border-pink-200 mb-2">
           <PartyPopper className="w-3.5 h-3.5 text-pink-600" />
-          <span>Direct Party Enquiry to slide.glide.0926@gmail.com</span>
+          <span>Quick Birthday &amp; Event Enquiry</span>
         </span>
         <h3 className="text-xl sm:text-2xl font-black text-slate-900 font-['Fredoka',sans-serif] tracking-tight">
           Plan Your Child's Dream Birthday in Nagarabhavi
         </h3>
         <p className="text-xs sm:text-sm text-slate-600 mt-1">
-          Fill out the basic details below. We'll receive your enquiry directly at <strong className="text-slate-900">slide.glide.0926@gmail.com</strong> and get back with complete pricing, inclusions, and slot availability.
+          Fill out the basic details below and submit your enquiry — our team will get back to you with complete pricing, inclusions, and slot availability.
         </p>
       </div>
 
@@ -138,7 +139,7 @@ Phone: ${formData.phone}`;
               rel="noopener noreferrer"
               className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-xs transition-colors"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <WhatsAppIcon className="w-3.5 h-3.5" />
               <span>Send via WhatsApp Instantly</span>
             </a>
 
@@ -341,7 +342,7 @@ Phone: ${formData.phone}`;
 
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-100">
             <p className="text-[11px] text-slate-500 text-center sm:text-left">
-              📩 Sends directly to <strong>slide.glide.0926@gmail.com</strong>. We reply within 2–4 hours.
+              📩 Submit your enquiry in one click. Our team replies within 2–4 hours.
             </p>
 
             <button
